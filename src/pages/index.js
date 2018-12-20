@@ -19,11 +19,9 @@ export default () => (
     <Paragraph>
       I think it's important as a web developer to stay curious in order to
       always learn and re-learn. E.g. I've made this website with{' '}
-      <Anchor target="_blank" href="https://www.gatsbyjs.org/">
-        Gatsby
-      </Anchor>{' '}
-      because I've heard a lot of posotive feedback about it and I wanted to try
-      GraphQL as well.
+      <Anchor href="https://www.gatsbyjs.org/">Gatsby</Anchor> because I've
+      heard a lot of posotive feedback about it and I wanted to try GraphQL as
+      well.
     </Paragraph>
   </>
 );

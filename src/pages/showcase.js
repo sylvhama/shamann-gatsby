@@ -17,19 +17,13 @@ export default () => (
     <SEO title="Showcase" />
     <Paragraph>
       I don't want to spam screenshots of all projects I've worked on. Please
-      visit my{' '}
-      <Anchor target="_blank" href="https://www.behance.net/sylvhama/">
-        Behance
-      </Anchor>{' '}
+      visit my <Anchor href="https://www.behance.net/sylvhama/">Behance</Anchor>{' '}
       if you want to see them.
     </Paragraph>
     <Paragraph>
       Instead, I am going to talk about my main project at Ubisoft. I've posted
       a{' '}
-      <Anchor
-        target="_blank"
-        href="https://twitter.com/sylvhama/status/1046820308647387141"
-      >
+      <Anchor href="https://twitter.com/sylvhama/status/1046820308647387141">
         thread
       </Anchor>{' '}
       on Twitter with more visuals if you are interested.
@@ -74,10 +68,7 @@ export default () => (
     <Paragraph>
       If you want more details about the stack and the final result then you
       should check this{' '}
-      <Anchor
-        target="_blank"
-        href="https://twitter.com/sylvhama/status/1046820308647387141"
-      >
+      <Anchor href="https://twitter.com/sylvhama/status/1046820308647387141">
         thread
       </Anchor>
       !
