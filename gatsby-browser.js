@@ -2,16 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Layout from './src/components/Layout';
-
-const theme = {
-  color: {
-    lightBlue: '#B3E5FC',
-    blue: '#03A9F4',
-    darkGrey: '#212121',
-  },
-  font: { mono: `'Roboto Mono', monospace` },
-  breakpoint: '640px',
-};
+import theme from './theme';
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={theme}>{element}</ThemeProvider>
