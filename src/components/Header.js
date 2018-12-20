@@ -14,6 +14,7 @@ const Wrapper = styled.header`
   align-items: center;
 
   @media (max-width: ${props => props.theme.breakpoint}) {
+    padding-top: 2rem;
     flex-direction: column;
     text-align: center;
   }
