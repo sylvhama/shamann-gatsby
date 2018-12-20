@@ -11,6 +11,3 @@ export const wrapRootElement = ({ element }) => (
 export const wrapPageElement = ({ element, props }) => (
   <Layout {...props}>{element}</Layout>
 );
-
-export const onServiceWorkerUpdateFound = () =>
-  console.log('The application will be updated after next reload.');
