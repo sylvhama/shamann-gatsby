@@ -23,7 +23,7 @@ const Wrapper = styled.header`
 const StyledImg = styled(Img)`
   border-radius: 50%;
   @media (max-width: ${props => props.theme.breakpoint}) {
-    padding-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
