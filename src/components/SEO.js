@@ -8,6 +8,7 @@ function SEO({ description, lang, meta, keywords, title }) {
     <StaticQuery
       query={detailsQuery}
       render={data => {
+        const siteTitle = `${title} | ${data.site.siteMetadata.title}`;
         const metaDescription =
           description || data.site.siteMetadata.description;
         return (
@@ -24,7 +25,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: 'og:title',
-                content: title,
+                content: siteTitle,
               },
               {
                 property: 'og:description',
@@ -44,7 +45,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: 'twitter:title',
-                content: title,
+                content: siteTitle,
               },
               {
                 name: 'twitter:description',
