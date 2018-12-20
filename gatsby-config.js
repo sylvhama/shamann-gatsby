@@ -33,6 +33,7 @@ module.exports = {
         icon: 'src/images/shamann-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-workbox',
     'gatsby-plugin-styled-components',
   ],
 };
