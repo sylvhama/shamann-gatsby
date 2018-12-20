@@ -12,13 +12,5 @@ export const wrapPageElement = ({ element, props }) => (
   <Layout {...props}>{element}</Layout>
 );
 
-export const onServiceWorkerUpdateFound = () => {
-  const answer = window.confirm(
-    `This application has been updated. ` +
-      `Reload to display the latest version?`
-  );
-
-  if (answer === true) {
-    window.location.reload();
-  }
-};
+export const onServiceWorkerUpdateFound = () =>
+  console.log('The application will be updated after next reload.');
