@@ -9,6 +9,11 @@ export default () => (
       View my complete resume on{' '}
       <Anchor href="https://www.linkedin.com/in/sylvainhamann">LinkedIn</Anchor>
       .<br />
+      You can also download it as PDF on{' '}
+      <Anchor href="https://docs.google.com/document/d/1VybgVJOKbZOqbQwRfGkYp--9yP-xXfMF5TA7s8M250I/edit?usp=sharing">
+        Google Drive
+      </Anchor>
+      .<br />
       Browse my portfolio on{' '}
       <Anchor href="https://www.behance.net/sylvhama/">Behance</Anchor>.
       <br />
