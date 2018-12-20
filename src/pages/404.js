@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 
 const Img = styled.img`
   margin: 0 auto;
