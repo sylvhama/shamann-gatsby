@@ -5,6 +5,8 @@ import SEO from '../components/SEO';
 
 const Img = styled.img`
   margin: 0 auto;
+  max-width: 426px;
+  width: 100%;
   display: block;
 `;
 
