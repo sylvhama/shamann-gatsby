@@ -1,10 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Paragraph from './shared/Paragraph';
 import Anchor from './shared/Anchor';
 
+const Footer = styled.footer`
+  padding-bottom: 2rem;
+`;
+
 export default () => (
-  <footer>
+  <Footer>
     <Paragraph>
       View my complete resume on{' '}
       <Anchor href="https://www.linkedin.com/in/sylvainhamann">LinkedIn</Anchor>
@@ -32,5 +37,5 @@ export default () => (
         rigor / skills.)
       </small>
     </Paragraph>
-  </footer>
+  </Footer>
 );
