@@ -21,7 +21,7 @@ const Img = styled.img`
 export default () => (
   <>
     <SEO title="Talks & Open Source" />
-    <Img width={256} height={256} src={collage} />
+    <Img width={256} height={256} src={collage} alt="Collage of several pictures taken at meetups" />
     <Paragraph>
       Even if I never have worked for a company that had an open source culture,
       I still contribute to the Web / JS community as much as I can. I love
