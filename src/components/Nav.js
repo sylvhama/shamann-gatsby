@@ -54,7 +54,8 @@ const List = styled.ul`
   padding: 4rem 1rem;
   width: 100%;
   max-width: ${props => props.theme.breakpoint};
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   justify-content: space-between;
   list-style: none;
 
