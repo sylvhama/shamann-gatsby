@@ -14,7 +14,7 @@ export default () => (
       </span>{' '}
       the Web, especially Progressive Web Apps. I mostly do Front-end
       development (React, Redux, ES∞...) but I do enjoy Backend as well
-      (Node.js, NoSQL, WordPress...).
+      (Node.js, NoSQL, WordPress...). I embrace the KISS principle.
     </Paragraph>
     <Paragraph>
       I think it's important as a web developer to stay curious in order to
