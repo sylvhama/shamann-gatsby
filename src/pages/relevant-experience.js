@@ -22,7 +22,7 @@ export default () => (
       I worked at Cream for roughly one year. I've made web applications and
       responsive websites for <strong>worldwide clients</strong> like Lacoste or
       Air France. I also have contributed to unconventional projects like the
-      Lausane University Hospital's interactive map.
+      Lausanne University Hospital's interactive map.
     </Paragraph>
     <Paragraph>
       Nowadays I work at <strong>Ubisoft Montreal</strong> in Canada as a web
