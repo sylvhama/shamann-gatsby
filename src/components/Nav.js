@@ -92,9 +92,12 @@ const Nav = ({ links, ...rest }) => (
             <Item key={link.name}>
               <StyledLink
                 to={link.path}
-                active={location.pathname === link.path}
+                active={
+                  location.pathname === link.path ||
+                  location.pathname + '/' === link.path
+                }
               >
-                {link.name}
+                {link.name} {location.pathname}
               </StyledLink>
             </Item>
           ))}
