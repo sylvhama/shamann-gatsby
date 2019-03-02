@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { Location } from '@reach/router';
 
 const StyledLink = styled(Link)`
   position: relative;
@@ -81,17 +82,25 @@ const Item = styled.li`
 `;
 
 const Nav = ({ links, ...rest }) => (
-  <nav {...rest}>
-    <List>
-      {links.map(link => (
-        <Item key={link.name}>
-          <StyledLink to={link.path} activeClassName="active">
-            {link.name}
-          </StyledLink>
-        </Item>
-      ))}
-    </List>
-  </nav>
+  <Location>
+    {({ location }) => (
+      <nav {...rest}>
+        <List>
+          {links.map(link => (
+            <Item key={link.name}>
+              <StyledLink
+                to={link.path}
+                activeClassName="active"
+                className={location === '/' && 'active'}
+              >
+                {link.name}
+              </StyledLink>
+            </Item>
+          ))}
+        </List>
+      </nav>
+    )}
+  </Location>
 );
 
 Nav.propTypes = {
