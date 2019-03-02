@@ -36,18 +36,20 @@ const StyledLink = styled(Link)`
 
   &:hover,
   &:focus {
-    color: ${props => props.theme.color.lightBlue};
+    color: ${props => !props.active && props.theme.color.lightBlue};
   }
 
-  &.active {
-    color: ${props => props.theme.color.blue};
+  ${props =>
+    props.active &&
+    `
+    color: ${props.theme.color.blue};
 
     &:before,
     &:after {
       opacity: 1;
       transform: scaleX(1);
     }
-  }
+  `}
 `;
 
 const List = styled.ul`
@@ -90,8 +92,7 @@ const Nav = ({ links, ...rest }) => (
             <Item key={link.name}>
               <StyledLink
                 to={link.path}
-                activeClassName="active"
-                className={location === '/' && 'active'}
+                active={location.pathname === link.path}
               >
                 {link.name}
               </StyledLink>

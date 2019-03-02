@@ -4,7 +4,7 @@ module.exports = {
     description: 'Web Developer',
     author: '@sylvhama',
     navLinks: [
-      { name: 'About Me', path: '' },
+      { name: 'About Me', path: '/' },
       { name: 'Relevant Experience', path: '/relevant-experience/' },
       { name: 'Showcase', path: '/showcase/' },
       { name: 'Talks & OSS', path: '/talks-open-source/' },
