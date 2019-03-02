@@ -20,8 +20,8 @@ export default () => (
       I think it's important as a web developer to stay curious in order to
       always learn and re-learn. E.g. I've made this website with{' '}
       <Anchor href="https://www.gatsbyjs.org/">Gatsby</Anchor> because I've
-      heard a lot of positive feedback about it and I wanted to have fun with GraphQL as
-      well.
+      heard a lot of positive feedback about it and I wanted to have fun with
+      GraphQL as well.
     </Paragraph>
   </>
 );

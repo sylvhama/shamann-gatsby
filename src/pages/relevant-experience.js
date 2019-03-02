@@ -26,9 +26,12 @@ export default () => (
     </Paragraph>
     <Paragraph>
       Nowadays I work at <strong>Ubisoft Montreal</strong> in Canada as a web
-      developer. I am giving my best to enhance the user experience on Ubisoft
-      Club applications (PlayStation 4, Xbox One, Web, iOS and Android) with my
-      teammates.
+      developer. My main activity is to maintain and develop features for the
+      Ubisoft Club applications on PlayStation 4 and Xbox One. I also have
+      created a platform to easily develop internal tools that now have two
+      devlopers working full time on it. Plus I have worked on web views that
+      summarize your Club progression visible from the main menu of Assassin's
+      Creed Origins and Odyssey.
     </Paragraph>
   </>
 );
