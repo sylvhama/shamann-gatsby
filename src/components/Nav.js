@@ -91,7 +91,6 @@ const Nav = ({ links, ...rest }) => (
           {links.map(link => (
             <Item key={link.name}>
               {console.log(location)}
-              {console.log(window.location)}
               <StyledLink
                 to={link.path}
                 active={location.pathname === link.path}
