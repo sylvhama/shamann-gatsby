@@ -61,9 +61,14 @@ const Layout = ({ children, ...rest }) => (
     }) => (
       <>
         <Header title={title} description={description} />
-        {rest['*'] !== 'offline-plugin-app-shell-fallback' && (
-          <Nav links={navLinks} />
-        )}
+        <Nav
+          key={
+            rest['*'] === 'offline-plugin-app-shell-fallback'
+              ? 'offline'
+              : 'online'
+          }
+          links={navLinks}
+        />
         <Wrapper>
           {children}
           <HR />
