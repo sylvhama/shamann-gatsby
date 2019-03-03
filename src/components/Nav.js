@@ -86,6 +86,7 @@ const Nav = ({ links, ...rest }) => (
     {({ location }) => (
       <nav {...rest}>
         {console.log(location.pathname)}
+        <p style={{ display: 'none' }}>{location.pathname}</p>
         <List>
           {links.map(link => (
             <Item key={link.name}>
