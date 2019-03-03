@@ -90,18 +90,13 @@ const Nav = ({ links, ...rest }) => (
         <List>
           {links.map(link => (
             <Item key={link.name}>
+              {console.log(location)}
+              {console.log(window.location)}
               <StyledLink
                 to={link.path}
-                active={
-                  location.pathname === 'offline-plugin-app-shell-fallback'
-                    ? window.location.pathname === link.path
-                    : location.pathname === link.path
-                }
+                active={location.pathname === link.path}
               >
-                {link.name}{' '}
-                {location.pathname === 'offline-plugin-app-shell-fallback'
-                  ? 1
-                  : 0}
+                {link.name}
               </StyledLink>
             </Item>
           ))}
