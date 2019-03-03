@@ -85,17 +85,18 @@ const Nav = ({ links, ...rest }) => (
   <Location>
     {({ location }) => (
       <nav {...rest}>
-        {console.log('rest', rest)}
-        {console.log('pathname', location.pathname)}
+        {console.log(location.pathname)}
         <p style={{ display: 'none' }}>{location.pathname}</p>
-        <List>
+        <List
+          key={
+            location.pathname.includes('offline-plugin-app-shell-fallback')
+              ? 'offline'
+              : 'online'
+          }
+        >
           {links.map(link => (
             <Item key={link.name}>
-              <StyledLink
-                to={link.path}
-                activeClassName={'active'}
-                className="active"
-              >
+              <StyledLink to={link.path} activeClassName="active">
                 {link.name}
               </StyledLink>
             </Item>

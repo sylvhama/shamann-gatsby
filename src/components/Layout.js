@@ -38,7 +38,7 @@ const HR = styled.hr`
   opacity: 0.5;
 `;
 
-const Layout = ({ children, ...rest }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -61,7 +61,7 @@ const Layout = ({ children, ...rest }) => (
     }) => (
       <>
         <Header title={title} description={description} />
-        <Nav links={navLinks} {...rest} />
+        <Nav links={navLinks} />
         <Wrapper>
           {children}
           <HR />
