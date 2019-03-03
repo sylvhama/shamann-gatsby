@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { Location } from '@reach/router';
 
 const StyledLink = styled(Link)`
   position: relative;
@@ -82,23 +81,17 @@ const Item = styled.li`
 `;
 
 const Nav = ({ links, ...rest }) => (
-  <Location>
-    {({ location }) => (
-      <nav {...rest}>
-        {console.log(location.pathname)}
-        <p style={{ display: 'none' }}>{location.pathname}</p>
-        <List>
-          {links.map(link => (
-            <Item key={link.name}>
-              <StyledLink to={link.path} activeClassName="active">
-                {link.name}
-              </StyledLink>
-            </Item>
-          ))}
-        </List>
-      </nav>
-    )}
-  </Location>
+  <nav {...rest}>
+    <List>
+      {links.map(link => (
+        <Item key={link.name}>
+          <StyledLink to={link.path} activeClassName="active">
+            {link.name}
+          </StyledLink>
+        </Item>
+      ))}
+    </List>
+  </nav>
 );
 
 Nav.propTypes = {
