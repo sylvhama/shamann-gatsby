@@ -87,13 +87,7 @@ const Nav = ({ links, ...rest }) => (
       <nav {...rest}>
         {console.log(location.pathname)}
         <p style={{ display: 'none' }}>{location.pathname}</p>
-        <List
-          key={
-            location.pathname.includes('offline-plugin-app-shell-fallback')
-              ? 'offline'
-              : 'online'
-          }
-        >
+        <List>
           {links.map(link => (
             <Item key={link.name}>
               <StyledLink to={link.path} activeClassName="active">
