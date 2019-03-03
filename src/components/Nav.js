@@ -93,11 +93,15 @@ const Nav = ({ links, ...rest }) => (
               <StyledLink
                 to={link.path}
                 active={
-                  location.pathname === link.path ||
-                  location.pathname + '/' === link.path
+                  location.pathname === 'offline-plugin-app-shell-fallback'
+                    ? window.location.pathname === link.path
+                    : location.pathname === link.path
                 }
               >
-                {link.name} {location.pathname}
+                {link.name}{' '}
+                {location.pathname === 'offline-plugin-app-shell-fallback'
+                  ? 1
+                  : 0}
               </StyledLink>
             </Item>
           ))}
