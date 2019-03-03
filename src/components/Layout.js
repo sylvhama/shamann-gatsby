@@ -61,14 +61,10 @@ const Layout = ({ children, ...rest }) => (
     }) => (
       <>
         <Header title={title} description={description} />
-        <Nav
-          key={
-            rest['*'] === 'offline-plugin-app-shell-fallback'
-              ? 'offline'
-              : 'online'
-          }
-          links={navLinks}
-        />
+        {// Dirty fix that avoids rendering Nav without active link
+        rest['*'] !== 'offline-plugin-app-shell-fallback' && (
+          <Nav links={navLinks} />
+        )}
         <Wrapper>
           {children}
           <HR />
