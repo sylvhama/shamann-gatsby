@@ -14,7 +14,7 @@ export default () => (
     </Paragraph>
     <Paragraph>
       During my studies, I have interned at four different companies in France,
-      Luxemboug and South Korea. I am really used to work in a multicultural
+      Luxembourg and South Korea. I am really used to work in a multicultural
       environment. After I graduated, I have worked as a web developer for two
       years at Asiance, a digital agency located in <strong>Seoul</strong>. I
       also have <strong>worked in Tokyo</strong> as a front-end developer for
@@ -29,7 +29,7 @@ export default () => (
       developer. My main activity is to maintain and develop features for the
       Ubisoft Club applications on PlayStation 4 and Xbox One. I also have
       created a platform to easily develop internal tools that now have two
-      devlopers working full time on it. Plus I have worked on web views that
+      developers working full time on it. Plus I have worked on web views that
       summarize your Club progression visible from the main menu of Assassin's
       Creed Origins and Odyssey.
     </Paragraph>
