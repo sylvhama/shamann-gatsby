@@ -64,7 +64,9 @@ const Layout = ({ children, ...rest }) => (
       },
     }) => (
       <>
-        <ToggleMode name="mode" />
+        {rest['*'] !== 'offline-plugin-app-shell-fallback' && (
+          <ToggleMode name="mode" />
+        )}
         <Header title={title} description={description} />
         {// Dirty fix that avoids rendering Nav without active link
         rest['*'] !== 'offline-plugin-app-shell-fallback' && (
