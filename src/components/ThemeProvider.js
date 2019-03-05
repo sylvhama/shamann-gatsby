@@ -5,22 +5,25 @@ import theme from '../theme';
 
 export const ModeContext = React.createContext();
 
-const getMode = () => localStorage.getItem('mode') || 'dark';
+const isWindowDefined = typeof window !== 'undefined';
+
+const getMode = () =>
+  (isWindowDefined && window.localStorage.getItem('mode')) || 'dark';
 
 const metaThemeColor =
-  typeof window !== 'undefined' &&
-  window.document.querySelector('meta[name=theme-color]');
+  isWindowDefined && window.document.querySelector('meta[name=theme-color]');
 
 export default ({ children }) => {
   const [isDark, setIsDark] = useState(getMode() === 'dark');
   useEffect(
     () => {
-      localStorage.setItem('mode', isDark ? 'dark' : 'light');
-      metaThemeColor &&
+      if (isWindowDefined) {
+        window.localStorage.setItem('mode', isDark ? 'dark' : 'light');
         metaThemeColor.setAttribute(
           'content',
           theme(isDark).modeColors.background
         );
+      }
     },
     [isDark]
   );
