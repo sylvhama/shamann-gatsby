@@ -8,7 +8,8 @@ export const ModeContext = React.createContext();
 const getMode = () => localStorage.getItem('mode') || 'dark';
 
 const metaThemeColor =
-  window && window.document.querySelector('meta[name=theme-color]');
+  typeof window !== 'undefined' &&
+  window.document.querySelector('meta[name=theme-color]');
 
 export default ({ children }) => {
   const [isDark, setIsDark] = useState(getMode() === 'dark');
