@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import styled, { createGlobalStyle } from 'styled-components';
 
+import ToggleMode from './ToggleMode';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
@@ -13,12 +14,14 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
+    position: relative;
     margin: 0;
     padding: 0;
-  min-width: 300px;
-    background-color: ${props => props.theme.color.darkGrey};
+    min-width: 300px;
+    background-color: ${props => props.theme.modeColors.background};
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: ${props => props.theme.modeColors.text};
+    transition: color 0.2s ease-out, background 0.2s ease-out;
   }
 `;
 
@@ -34,8 +37,9 @@ const HR = styled.hr`
   height: 1px;
   width: 50%;
   display: block;
-  background-color: white;
+  background-color: ${props => props.theme.modeColors.text};
   opacity: 0.5;
+  transition: background-color ease 0.5sec;
 `;
 
 const Layout = ({ children, ...rest }) => (
@@ -60,6 +64,7 @@ const Layout = ({ children, ...rest }) => (
       },
     }) => (
       <>
+        <ToggleMode name="mode" />
         <Header title={title} description={description} />
         {// Dirty fix that avoids rendering Nav without active link
         rest['*'] !== 'offline-plugin-app-shell-fallback' && (

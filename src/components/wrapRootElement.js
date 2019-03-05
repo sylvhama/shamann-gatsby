@@ -1,8 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-
-import theme from '../theme';
+import ThemeProvider from './ThemeProvider';
 
 export const wrapRootElement = ({ element }) => (
-  <ThemeProvider theme={theme}>{element}</ThemeProvider>
+  <ThemeProvider>{element}</ThemeProvider>
 );
