@@ -17,7 +17,7 @@ export default () => (
       Luxembourg and South Korea. I am really used to work in a multicultural
       environment. After I graduated, I have worked as a web developer for two
       years at Asiance, a digital agency located in <strong>Seoul</strong>. I
-      also have <strong>worked in Tokyo</strong> as a front-end developer for
+      also have <strong>worked in Tokyo</strong> as a web developer for
       two digital agencies. I initially joined Netwise for eight months and then
       I worked at Cream for roughly one year. I've made web applications and
       responsive websites for <strong>worldwide clients</strong> like Lacoste or
