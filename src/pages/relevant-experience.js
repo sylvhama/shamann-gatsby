@@ -26,7 +26,7 @@ export default () => (
     </Paragraph>
     <Paragraph>
       I aslo have worked at <strong>Ubisoft Montreal</strong> in Canada as a web
-      developer. My main activity was to maintain and develop features for the
+      developer for almost two years. My main activity was to maintain and develop features for the
       Ubisoft Club single-page applications on PlayStation 4 and Xbox One. I also have
       created a Progressive Web App used to easily develop internal tools. Plus I have 
       worked on web views tha summarize your Club progression visible from the main 
