@@ -156,6 +156,7 @@ export default () => {
     <>
       <ToggleStyle />
       <Toggle
+        aria-label="Toggle mode"
         checked={isDark}
         onChange={() => setIsDark(!isDark)}
         icons={{
