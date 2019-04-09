@@ -32,5 +32,8 @@ export default () => (
       worked on web views tha summarize your Club progression visible from the main 
       menu of Assassin's Creed Origins and Odyssey.
     </Paragraph>
+    <Paragraph>
+      Nowadays I am working at <strong>Shopify</strong> as a web developer.
+    </Paragraph>
   </>
 );
