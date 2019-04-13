@@ -26,16 +26,7 @@ export default () => (
       .
       <br />
       See some of my code on{' '}
-      <Anchor href="https://github.com/sylvhama">GitHub</Anchor>.{' '}
-      <small>
-        (
-        <span role="img" aria-label="warning">
-          ⚠️
-        </span>{' '}
-        All the companies I've worked for used private repos on Bitbucket or
-        GitLab. Those side projects are made for fun, they don't reflect my
-        rigor / skills.)
-      </small>
+      <Anchor href="https://github.com/sylvhama">GitHub</Anchor>.
     </Paragraph>
   </Footer>
 );
