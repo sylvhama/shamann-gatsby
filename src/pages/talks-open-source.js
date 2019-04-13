@@ -23,8 +23,7 @@ export default () => (
     <SEO title="Talks & Open Source" />
     <Img width={256} height={256} src={collage} alt="Collage of several pictures taken at meetups" />
     <Paragraph>
-      Even if I never have worked for a company that had an open source culture,
-      I still contribute to the Web / JS community as much as I can. I love
+      I contribute to the Web / JS community as much as I can. I love
       talking at local{' '}
       <Anchor href="https://www.meetup.com/members/182735276/">meetups</Anchor>{' '}
       (Seoul, Tokyo and Montreal) or taking care of developers debuting in web
