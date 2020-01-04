@@ -71,7 +71,7 @@ export default () => (
       <Anchor href="https://twitter.com/sylvhama/status/1046820308647387141">
         thread
       </Anchor>
-      !
+      ! The project was a success a we also ported it on Nintendo Switch afterwise.
     </Paragraph>
   </>
 );
