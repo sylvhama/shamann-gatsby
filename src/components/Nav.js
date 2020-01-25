@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const StyledLink = styled(Link)`
   position: relative;
   text-decoration: none;
-  color: ${props => props.theme.modeColors.text};
+  color: currentColor;
   transition: color 0.2s ease;
 
   &:before,
