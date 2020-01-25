@@ -35,10 +35,12 @@ const StyledLink = styled(Link)`
   &:hover,
   &:focus {
     color: ${props => props.theme.color.lightBlue};
+    transition: color 0.2s ease-out;
   }
 
   &.active {
     color: ${props => props.theme.color.blue};
+    transition: color 0.2s ease-out;
 
     &:before,
     &:after {
