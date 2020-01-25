@@ -37,7 +37,7 @@ const HR = styled.hr`
   height: 1px;
   width: 50%;
   display: block;
-  background-color: ${props => props.theme.modeColors.text};
+  background-color: currentColor;
   opacity: 0.5;
   transition: background-color ease 0.5sec;
 `;
