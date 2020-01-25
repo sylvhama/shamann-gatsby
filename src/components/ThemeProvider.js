@@ -7,8 +7,15 @@ export const ModeContext = React.createContext();
 
 const isWindowDefined = typeof window !== 'undefined';
 
-const getMode = () =>
-  (isWindowDefined && window.localStorage.getItem('mode')) || 'dark';
+const getMode = () => {
+  if(isWindowDefined) {
+    const savedMode = window.localStorage.getItem('mode');
+    if(savedMode) return savedMode;
+    if(window.matchMedia("(prefers-color-scheme: dark)").matches) return 'dark';
+    if(window.matchMedia("(prefers-color-scheme: light)").matches) return 'light';
+  }
+  return 'dark';
+}
 
 const metaThemeColor =
   isWindowDefined && window.document.querySelector('meta[name=theme-color]');
