@@ -7,7 +7,7 @@ const StyledLink = styled(Link)`
   position: relative;
   text-decoration: none;
   color: currentColor;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease-out;
 
   &:before,
   &:after {
@@ -19,7 +19,7 @@ const StyledLink = styled(Link)`
     background-color: currentColor;
     opacity: 0;
     transform: scaleX(0);
-    transition: opacity 0.25s ease, transform 0.25s ease-out;
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
   }
 
   &:before {
