@@ -26,7 +26,8 @@ export default () => (
       <Anchor href="https://twitter.com/sylvhama/status/1046820308647387141">
         thread
       </Anchor>{' '}
-      on Twitter with more visuals if you are interested.
+      on Twitter with more visuals if you are interested. I also wrote an <Anchor>article</Anchor>{' '}
+      focusing on the navigation and others UX tips.
     </Paragraph>
     <Paragraph>
       When I first started my job at Ubisoft Montreal, I was part of a team in
@@ -71,7 +72,9 @@ export default () => (
       <Anchor href="https://twitter.com/sylvhama/status/1046820308647387141">
         thread
       </Anchor>
-      ! The project was a success a we also ported it on Nintendo Switch afterwise.
+      ! You can also read my <Anchor>article</Anchor>{' '}
+      focusing on the navigation and others UX tips. 
+      The project was a success a we also ported it on Nintendo Switch afterwise.
     </Paragraph>
   </>
 );
