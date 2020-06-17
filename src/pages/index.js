@@ -12,7 +12,7 @@ export default () => (
       <span role="img" aria-label="love">
         💖
       </span>{' '}
-      the Web, especially Progressive Web Apps. I mostly do Front-end
+      the Web, especially <Anchor href="https://github.com/sylvhama/pwa-links">Progressive Web Apps</Anchor>. I mostly do Front-end
       development (JavaScript, React, Redux...) but I do enjoy Backend as well
       (Node.js, GraphQL, WordPress...). I embrace the KISS principle.
     </Paragraph>
