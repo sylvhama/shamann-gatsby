@@ -29,7 +29,7 @@ export default () => (
       developer for almost two years. My main activity was to maintain and develop features for the
       Ubisoft Club single-page application on PlayStation 4, Xbox One and Nintendo Switch. I also have
       created a Progressive Web App used to easily develop internal tools. Plus I have 
-      worked on web views tha summarize your Club progression visible from the main 
+      worked on web views that summarize your Club progression visible from the main 
       menu of Assassin's Creed Origins and Odyssey.
     </Paragraph>
     <Paragraph>
