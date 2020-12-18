@@ -29,7 +29,7 @@ export default () => (
       (Seoul, Tokyo and Montreal) or taking care of developers debuting in web
       development. E.g. I've made a list of{' '}
       <Anchor href="https://github.com/sylvhama/modern-js">free content</Anchor>{' '}
-      for people debuting with ES6/2015 and React.
+      for people debuting with JavaScript and React.
       I also enjoy doing internal presentations or sharing articles to
       introduce new concepts or libraries to my teammates. I am also used to do
       pair programming to solve problems in a more efficient way.
