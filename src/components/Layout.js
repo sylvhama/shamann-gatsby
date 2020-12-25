@@ -9,7 +9,6 @@ import Nav from './Nav';
 import Footer from './Footer';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,700|Roboto:400,700');
   * {
     box-sizing: border-box;
   }

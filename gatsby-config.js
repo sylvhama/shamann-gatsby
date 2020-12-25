@@ -33,6 +33,14 @@ module.exports = {
         icon: 'src/images/shamann-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto+Mono:300,700', 'Roboto:400,700&display=swap'],
+        },
+      },
+    },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
   ],
