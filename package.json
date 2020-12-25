@@ -3,6 +3,9 @@
   "description": "My Website",
   "version": "1.0.0",
   "author": "Sylvain Hamann",
+  "engines": {
+    "node": "10.x"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "1.12.0",
     "gatsby": "2.29.2",
