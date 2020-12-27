@@ -20,7 +20,7 @@ export default () => (
       also have <strong>worked in Tokyo</strong> as a web developer for
       two digital agencies. I initially joined Netwise for eight months and then
       I worked at Cream for roughly one year. I've made web applications and
-      responsive websites for <strong>worldwide clients</strong> like Lacoste or
+      responsive websites for <strong>worldwide clients</strong> such as Lacoste or
       Air France. I also have contributed to unconventional projects like the
       Lausanne University Hospital's interactive map.
     </Paragraph>
