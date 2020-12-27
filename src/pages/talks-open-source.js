@@ -23,16 +23,13 @@ export default () => (
     <SEO title="Talks & Open Source" />
     <Img width={256} height={256} src={collage} alt="Collage of several pictures taken at meetups" />
     <Paragraph>
-      I contribute to the Web / JS community as much as I can. I love
-      talking at local{' '}
+      I have talked at several{' '}
       <Anchor href="https://www.meetup.com/members/182735276/">meetups</Anchor>{' '}
-      (Seoul, Tokyo and Montreal) or taking care of developers debuting in web
-      development. E.g. I've made a list of{' '}
+      in Seoul, Tokyo and Montreal. I also do presentations and share articles to
+      introduce new concepts or libraries to my teammates. I enjoy helping developers debuting in web
+      development via tutoring and pair programming. I've made a list of{' '}
       <Anchor href="https://github.com/sylvhama/modern-js">free content</Anchor>{' '}
       for people debuting with JavaScript and React.
-      I also enjoy doing internal presentations or sharing articles to
-      introduce new concepts or libraries to my teammates. I am also used to do
-      pair programming to solve problems in a more efficient way.
     </Paragraph>
   </>
 );
