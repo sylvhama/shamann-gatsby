@@ -36,6 +36,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: 'website',
               },
               {
+                property: 'og:picture',
+                content: data.site.siteMetadata.image,
+              },
+              {
                 name: 'twitter:card',
                 content: 'summary',
               },
@@ -50,6 +54,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 name: 'twitter:description',
                 content: metaDescription,
+              },
+              {
+                property: 'twitter:image',
+                content: data.site.siteMetadata.image,
               },
             ]
               .concat(
@@ -91,6 +99,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        image
       }
     }
   }

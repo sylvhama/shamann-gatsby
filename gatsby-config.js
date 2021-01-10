@@ -3,6 +3,7 @@ module.exports = {
     title: 'Sylvain Hamann',
     description: 'Web Developer',
     author: '@sylvhama',
+    image: '/shamann.png',
     navLinks: [
       { name: 'About Me', path: '/' },
       { name: 'Relevant Experience', path: '/relevant-experience' },
