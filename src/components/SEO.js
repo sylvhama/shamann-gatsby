@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: 'website',
               },
               {
-                property: 'og:picture',
+                property: 'og:image',
                 content: data.site.siteMetadata.image,
               },
               {
@@ -56,7 +56,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription,
               },
               {
-                property: 'twitter:image',
+                name: 'twitter:image',
                 content: data.site.siteMetadata.image,
               },
             ]
