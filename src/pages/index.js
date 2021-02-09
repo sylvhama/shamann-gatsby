@@ -13,15 +13,8 @@ export default () => (
         💖
       </span>{' '}
       the Web, especially <Anchor href="https://github.com/sylvhama/pwa-links">Progressive Web Apps</Anchor>. I mostly do Front-end
-      development (JavaScript, React, Redux...) but I do enjoy Backend as well
+      development (TypeScript, React, Redux...) but I do enjoy Backend as well
       (Node.js, GraphQL, WordPress...). I embrace the KISS principle.
-    </Paragraph>
-    <Paragraph>
-      I think it's important as a web developer to stay curious in order to
-      always learn and re-learn. E.g. I've made this website with{' '}
-      <Anchor href="https://www.gatsbyjs.org/">Gatsby</Anchor> because I've
-      heard a lot of positive feedback about it and I wanted to have fun with
-      GraphQL as well.
     </Paragraph>
   </>
 );
