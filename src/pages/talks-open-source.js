@@ -25,9 +25,8 @@ export default () => (
     <Paragraph>
       I have talked at several{' '}
       <Anchor href="https://www.meetup.com/members/182735276/">meetups</Anchor>{' '}
-      in Seoul, Tokyo and Montreal. I also do presentations and share articles to
-      introduce new concepts or libraries to my teammates. I enjoy helping developers debuting in web
-      development via tutoring and pair programming. I've made a list of{' '}
+      in Seoul, Tokyo and Montreal. I also have co-organized public and internal meetups.{' '}
+      I enjoy mentoring, pair programming and sharing. I've made a list of{' '}
       <Anchor href="https://github.com/sylvhama/modern-js">free content</Anchor>{' '}
       for people debuting with JavaScript and React.
     </Paragraph>
