@@ -21,12 +21,26 @@ const Img = styled.img`
 export default () => (
   <>
     <SEO title="Talks & Open Source" />
-    <Img width={256} height={256} src={collage} alt="Collage of several pictures taken at meetups" />
-    <Paragraph>
+    <Img
+      width={256}
+      height={256}
+      src={collage}
+      alt="Collage of several pictures taken at meetups"
+    />
+    <Paragraph
+      css={`
+        &::after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+      `}
+    >
       I have talked at several{' '}
       <Anchor href="https://www.meetup.com/members/182735276/">meetups</Anchor>{' '}
-      in Seoul, Tokyo and Montreal. I also have co-organized public and internal meetups.{' '}
-      I enjoy mentoring, pair programming and sharing. I've made a list of{' '}
+      in Seoul, Tokyo and Montreal. I also have co-organized public and internal
+      meetups. I enjoy mentoring, pair programming and sharing. I've made a list
+      of{' '}
       <Anchor href="https://github.com/sylvhama/modern-js">free content</Anchor>{' '}
       for people debuting with JavaScript and React.
     </Paragraph>

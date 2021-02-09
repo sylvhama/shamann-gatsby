@@ -12,9 +12,13 @@ export default () => (
       <span role="img" aria-label="love">
         💖
       </span>{' '}
-      the Web, especially <Anchor href="https://github.com/sylvhama/pwa-links">Progressive Web Apps</Anchor>. I mostly do Front-end
-      development (TypeScript, React, Redux...) but I do enjoy Backend as well
-      (Node.js, GraphQL, WordPress...). I embrace the <abbr title="Keep it Simple, Stupid">KISS</abbr> principle.
+      the Web, especially{' '}
+      <Anchor href="https://github.com/sylvhama/pwa-links">
+        Progressive Web Apps
+      </Anchor>
+      . I mostly do Front-end development (TypeScript, React, Redux...) but I do
+      enjoy Backend as well (Node.js, GraphQL, WordPress...). I embrace the{' '}
+      <abbr title="Keep it Simple, Stupid">KISS</abbr> principle.
     </Paragraph>
   </>
 );

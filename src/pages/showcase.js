@@ -26,7 +26,10 @@ export default () => (
       <Anchor href="https://twitter.com/sylvhama/status/1046820308647387141">
         thread
       </Anchor>{' '}
-      on Twitter with more visuals if you are interested. I also wrote an <Anchor href="https://dev.to/sylvhama/multi-directional-navigation-31k2">article</Anchor>{' '}
+      on Twitter with more visuals if you are interested. I also wrote an{' '}
+      <Anchor href="https://dev.to/sylvhama/multi-directional-navigation-31k2">
+        article
+      </Anchor>{' '}
       focusing on the navigation and others UX tips.
     </Paragraph>
     <Paragraph>
@@ -67,13 +70,16 @@ export default () => (
       Design System and Atomic Design via Storybook and Figma.
     </Paragraph>
     <Paragraph>
-      The project was a success a we also ported it on Nintendo Switch afterwise.
-      If you want more details about the stack and the final result then you
-      should check this{' '}
+      The project was a success a we also ported it on Nintendo Switch
+      afterwise. If you want more details about the stack and the final result
+      then you should check this{' '}
       <Anchor href="https://twitter.com/sylvhama/status/1046820308647387141">
         thread
       </Anchor>
-      ! You can also read my <Anchor href="https://dev.to/sylvhama/multi-directional-navigation-31k2">article</Anchor>{' '}
+      ! You can also read my{' '}
+      <Anchor href="https://dev.to/sylvhama/multi-directional-navigation-31k2">
+        article
+      </Anchor>{' '}
       focusing on the navigation and others UX tips.
     </Paragraph>
   </>
