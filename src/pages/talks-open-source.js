@@ -42,7 +42,11 @@ export default () => (
       meetups. I enjoy mentoring, pair programming and sharing. I've made a list
       of{' '}
       <Anchor href="https://github.com/sylvhama/modern-js">free content</Anchor>{' '}
-      for people debuting with JavaScript and React.
+      for people debuting with JavaScript and React. I also record{' '}
+      <Anchor href="https://www.youtube.com/playlist?list=PL3jMq0AMfCCeiXYJFp0HNLCR5uMZsMPs7">
+        videos in French
+      </Anchor>{' '}
+      about my experience as a web developer.
     </Paragraph>
   </>
 );
