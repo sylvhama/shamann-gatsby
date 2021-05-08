@@ -8,6 +8,8 @@ import Nav from './Nav';
 import Footer from './Footer';
 import { useSiteMetaData } from '../hooks';
 
+const offlineKey = 'offline-plugin-app-shell-fallback';
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -41,16 +43,19 @@ const Hr = styled.hr`
   transition: background-color ease 0.5sec;
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, ...rest }) => {
   const data = useSiteMetaData();
 
   const { title, description, navLinks } = data;
 
+  const keyToggle = `toggle-${rest['*'] === offlineKey}`;
+  const keyNav = `nav-${rest['*'] === offlineKey}`;
+
   return (
     <>
-      <ToggleMode name="mode" />
+      <ToggleMode key={keyToggle} name="mode" />
       <Header title={title} description={description} />
-      <Nav links={navLinks} />
+      <Nav key={keyNav} links={navLinks} />
       <Wrapper>
         {children}
         <Hr />
