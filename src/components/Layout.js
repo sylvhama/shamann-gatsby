@@ -50,13 +50,10 @@ const Layout = ({ children, ...rest }) => {
 
   return (
     <>
+      <p>{rest['*']}</p>
       {rest['*'] !== offlineKey && <ToggleMode name="mode" />}
       <Header title={title} description={description} />
-      {rest['*'] === offlineKey ? (
-        <Nav key="nav-offline" links={navLinks} />
-      ) : (
-        <Nav key="nav-online" links={navLinks} />
-      )}
+      {rest['*'] !== offlineKey && <Nav links={navLinks} />}
       <Wrapper>
         {children}
         <Hr />
