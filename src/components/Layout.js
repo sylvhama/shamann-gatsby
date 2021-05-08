@@ -41,12 +41,12 @@ const Hr = styled.hr`
   transition: background-color ease 0.5sec;
 `;
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children, ...rest }) => {
   const data = useSiteMetaData();
 
   const { title, description, navLinks } = data;
 
-  const isOffline = location.pathname === 'offline-plugin-app-shell-fallback';
+  const isOffline = rest['*'] === 'offline-plugin-app-shell-fallback';
 
   return (
     <>
