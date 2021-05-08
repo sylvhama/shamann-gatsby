@@ -1,0 +1,1 @@
+export { useSiteMetaData } from './useSiteMetaData';

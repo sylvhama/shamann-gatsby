@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
 import styled, { createGlobalStyle } from 'styled-components';
 
 import ToggleMode from './ToggleMode';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
+import { useSiteMetaData } from '../hooks';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -30,7 +30,7 @@ const Wrapper = styled.main`
   max-width: ${props => props.theme.breakpoint};
 `;
 
-const HR = styled.hr`
+const Hr = styled.hr`
   margin: 1.25rem auto 2rem;
   border: 0;
   height: 1px;
@@ -41,46 +41,25 @@ const HR = styled.hr`
   transition: background-color ease 0.5sec;
 `;
 
-const Layout = ({ children, ...rest }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            description
-            navLinks {
-              name
-              path
-            }
-          }
-        }
-      }
-    `}
-    render={({
-      site: {
-        siteMetadata: { title, description, navLinks },
-      },
-    }) => (
-      <>
-        {rest['*'] !== 'offline-plugin-app-shell-fallback' && (
-          <ToggleMode name="mode" />
-        )}
-        <Header title={title} description={description} />
-        {// Dirty fix that avoids rendering Nav without active link
-        rest['*'] !== 'offline-plugin-app-shell-fallback' && (
-          <Nav links={navLinks} />
-        )}
-        <Wrapper>
-          {children}
-          <HR />
-          <Footer />
-        </Wrapper>
-        <GlobalStyle />
-      </>
-    )}
-  />
-);
+const Layout = ({ children }) => {
+  const data = useSiteMetaData();
+
+  const { title, description, navLinks } = data;
+
+  return (
+    <>
+      <ToggleMode name="mode" />
+      <Header title={title} description={description} />
+      <Nav links={navLinks} />
+      <Wrapper>
+        {children}
+        <Hr />
+        <Footer />
+      </Wrapper>
+      <GlobalStyle />
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

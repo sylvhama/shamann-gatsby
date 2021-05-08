@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 import Title from '../../src/components/shared/Title';
@@ -13,6 +12,13 @@ const Wrapper = styled.header`
   justify-content: center;
   align-items: center;
 
+  img {
+    border-radius: 50%;
+    @media (max-width: ${props => props.theme.breakpoint}) {
+      margin-bottom: 1rem;
+    }
+  }
+
   @media (max-width: ${props => props.theme.breakpoint}) {
     padding-top: 2rem;
     flex-direction: column;
@@ -20,39 +26,21 @@ const Wrapper = styled.header`
   }
 `;
 
-const StyledImg = styled(Img)`
-  border-radius: 50%;
-  @media (max-width: ${props => props.theme.breakpoint}) {
-    margin-bottom: 1rem;
-  }
-`;
-
 const Header = ({ title, description, ...rest }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "shamann-icon.png" }) {
-          childImageSharp {
-            fixed(width: 100, height: 100) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <Wrapper {...rest}>
-        <StyledImg
-          fixed={data.file.childImageSharp.fixed}
-          alt="Sylvain Hamann's portrait"
-        />
-        <div>
-          <Title>{title}</Title>
-          <Subtitle>{description}</Subtitle>
-        </div>
-      </Wrapper>
-    )}
-  />
+  <Wrapper {...rest}>
+    <StaticImage
+      src="../images/shamann-icon.png"
+      placeholder="blurred"
+      layout="fixed"
+      alt="Sylvain Hamann's portrait"
+      width={100}
+      height={100}
+    />
+    <div>
+      <Title>{title}</Title>
+      <Subtitle>{description}</Subtitle>
+    </div>
+  </Wrapper>
 );
 
 Header.propTypes = {

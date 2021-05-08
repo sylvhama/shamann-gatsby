@@ -8,19 +8,21 @@ export const ModeContext = React.createContext();
 const isWindowDefined = typeof window !== 'undefined';
 
 const getMode = () => {
-  if(isWindowDefined) {
+  if (isWindowDefined) {
     const savedMode = window.localStorage.getItem('mode');
-    if(savedMode) return savedMode;
-    if(window.matchMedia("(prefers-color-scheme: dark)").matches) return 'dark';
-    if(window.matchMedia("(prefers-color-scheme: light)").matches) return 'light';
+    if (savedMode) return savedMode;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+      return 'dark';
+    if (window.matchMedia('(prefers-color-scheme: light)').matches)
+      return 'light';
   }
   return 'dark';
-}
+};
 
 const metaThemeColor =
   isWindowDefined && window.document.querySelector('meta[name=theme-color]');
 
-export default ({ children }) => {
+export default function MyThemeProvider({ children }) {
   const [isDark, setIsDark] = useState(getMode() === 'dark');
   useEffect(
     () => {
@@ -39,4 +41,4 @@ export default ({ children }) => {
       <ThemeProvider theme={theme(isDark)}>{children}</ThemeProvider>
     </ModeContext.Provider>
   );
-};
+}

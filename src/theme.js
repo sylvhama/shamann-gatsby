@@ -17,7 +17,9 @@ const lightColors = {
   text: '#212121',
 };
 
-export default isDark => ({
-  modeColors: isDark ? darkColors : lightColors,
-  ...base,
-});
+export default function theme(isDark) {
+  return {
+    modeColors: isDark ? darkColors : lightColors,
+    ...base,
+  };
+}

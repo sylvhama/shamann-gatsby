@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 const Img = styled.img`
   margin: 0 auto;
@@ -10,14 +10,14 @@ const Img = styled.img`
   display: block;
 `;
 
-const NotFoundPage = () => (
-  <>
-    <SEO title="404: Not found" />
-    <Img
-      alt="Confused Travolta gif"
-      src="https://media.giphy.com/media/hEc4k5pN17GZq/giphy.gif"
-    />
-  </>
-);
-
-export default NotFoundPage;
+export default function NotFoundPage() {
+  return (
+    <>
+      <Seo title="404: Not found" />
+      <Img
+        alt="Confused Travolta gif"
+        src="https://media.giphy.com/media/hEc4k5pN17GZq/giphy.gif"
+      />
+    </>
+  );
+}

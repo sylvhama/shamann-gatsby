@@ -122,7 +122,7 @@ const ToggleStyle = createGlobalStyle`
   .react-toggle {
     .icon {
       position: absolute;
-      top 50%;
+      top: 50%;
       margin-top: -0.5rem;
       width: 1rem;
       height: 1rem;
@@ -150,7 +150,7 @@ const Moon = () => (
   </span>
 );
 
-export default () => {
+export default function ToogleMode() {
   const { isDark, setIsDark } = useContext(ModeContext);
   return (
     <>
@@ -166,4 +166,4 @@ export default () => {
       />
     </>
   );
-};
+}
