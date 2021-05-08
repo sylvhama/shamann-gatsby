@@ -105,7 +105,7 @@ Nav.propTypes = {
       path: PropTypes.string.isRequired,
     }).isRequired
   ),
-  isOffline: bool,
+  isOffline: PropTypes.bool,
 };
 
 export default Nav;
