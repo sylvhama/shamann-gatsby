@@ -86,12 +86,13 @@ const Nav = ({ links, isOffline, ...rest }) => (
     <List>
       {links.map(link => (
         <Item key={link.name}>
-          <StyledLink
-            to={link.path}
-            activeClassName={isOffline ? undefined : 'active'}
-          >
-            {link.name}
-          </StyledLink>
+          {isOffline ? (
+            'test'
+          ) : (
+            <StyledLink to={link.path} activeClassName={'active'}>
+              {link.name}
+            </StyledLink>
+          )}
         </Item>
       ))}
     </List>
