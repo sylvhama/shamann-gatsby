@@ -48,14 +48,15 @@ const Layout = ({ children, ...rest }) => {
 
   const { title, description, navLinks } = data;
 
-  const keyToggle = `toggle-${rest['*'] === offlineKey}`;
-  const keyNav = `nav-${rest['*'] === offlineKey}`;
-
   return (
     <>
-      <ToggleMode key={keyToggle} name="mode" />
+      {rest['*'] !== offlineKey && <ToggleMode name="mode" />}
       <Header title={title} description={description} />
-      <Nav key={keyNav} links={navLinks} />
+      {rest['*'] === offlineKey ? (
+        <Nav links={navLinks} />
+      ) : (
+        <Nav links={navLinks} />
+      )}
       <Wrapper>
         {children}
         <Hr />

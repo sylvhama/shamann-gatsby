@@ -12,7 +12,8 @@ const ImageWrapper = styled.div`
 
   @media (max-width: ${props => props.theme.breakpoint}) {
     margin: 0 auto 1rem;
-    display: block;
+    display: flex;
+    justify-content: center;
     float: none;
   }
 `;
