@@ -81,8 +81,8 @@ const Item = styled.li`
   }
 `;
 
-const Nav = ({ links, hidden = false, ...rest }) => (
-  <nav style={{ opacity: hidden ? 0 : 1 }} {...rest}>
+const Nav = ({ links, ...rest }) => (
+  <nav {...rest}>
     <List>
       {links.map(link => (
         <Item key={link.name}>
@@ -102,7 +102,6 @@ Nav.propTypes = {
       path: PropTypes.string.isRequired,
     }).isRequired
   ),
-  hidden: PropTypes.bool,
 };
 
 export default Nav;

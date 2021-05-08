@@ -53,9 +53,9 @@ const Layout = ({ children, ...rest }) => {
       {rest['*'] !== offlineKey && <ToggleMode name="mode" />}
       <Header title={title} description={description} />
       {rest['*'] === offlineKey ? (
-        <Nav links={navLinks} />
+        <Nav key="nav-offline" links={navLinks} />
       ) : (
-        <Nav links={navLinks} />
+        <Nav key="nav-online" links={navLinks} />
       )}
       <Wrapper>
         {children}
