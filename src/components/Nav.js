@@ -81,18 +81,14 @@ const Item = styled.li`
   }
 `;
 
-const Nav = ({ links, isOffline, ...rest }) => (
+const Nav = ({ links, ...rest }) => (
   <nav {...rest}>
     <List>
       {links.map(link => (
         <Item key={link.name}>
-          {isOffline ? (
-            'test'
-          ) : (
-            <StyledLink to={link.path} activeClassName={'active'}>
-              {link.name}
-            </StyledLink>
-          )}
+          <StyledLink to={link.path} activeClassName="active">
+            {link.name}
+          </StyledLink>
         </Item>
       ))}
     </List>
@@ -106,7 +102,6 @@ Nav.propTypes = {
       path: PropTypes.string.isRequired,
     }).isRequired
   ),
-  isOffline: PropTypes.bool,
 };
 
 export default Nav;
