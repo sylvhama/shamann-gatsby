@@ -33,6 +33,7 @@ const Header = ({ title, description, ...rest }) => (
       placeholder="blurred"
       layout="fixed"
       alt="Sylvain Hamann's portrait"
+      quality={100}
       width={100}
       height={100}
     />

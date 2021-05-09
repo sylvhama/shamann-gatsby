@@ -29,6 +29,7 @@ export default function Talks() {
           layout="fixed"
           width={244}
           height={244}
+          quality={100}
           alt="Collage of several pictures taken at meetups"
         />
       </ImageWrapper>
