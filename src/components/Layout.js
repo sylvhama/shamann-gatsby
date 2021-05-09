@@ -52,7 +52,7 @@ const Layout = ({ children, ...rest }) => {
     <>
       {!isOffline && <ToggleMode name="mode" />}
       <Header title={title} description={description} />
-      {!isOffline && <Nav links={navLinks} isOffline={isOffline} />}
+      {!isOffline && <Nav links={navLinks} />}
       <Wrapper>
         {children}
         <Hr />
