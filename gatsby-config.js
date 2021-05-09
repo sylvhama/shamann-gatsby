@@ -6,9 +6,9 @@ module.exports = {
     image: '/shamann.png',
     navLinks: [
       { name: 'About Me', path: '/' },
-      { name: 'Relevant Experience', path: '/relevant-experience' },
-      { name: 'Showcase', path: '/showcase' },
-      { name: 'Talks & OSS', path: '/talks-open-source' },
+      { name: 'Relevant Experience', path: '/relevant-experience/' },
+      { name: 'Showcase', path: '/showcase/' },
+      { name: 'Talks & OSS', path: '/talks-open-source/' },
     ],
   },
   plugins: [
