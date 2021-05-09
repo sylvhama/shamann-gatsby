@@ -27,8 +27,8 @@ export default function Talks() {
           src="../images/shamann-speaker.jpg"
           placeholder="blurred"
           layout="fixed"
-          width={256}
-          height={256}
+          width={244}
+          height={244}
           alt="Collage of several pictures taken at meetups"
         />
       </ImageWrapper>
