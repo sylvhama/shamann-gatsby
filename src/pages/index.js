@@ -2,7 +2,6 @@ import React from 'react';
 
 import Seo from '../components/Seo';
 import Paragraph from '../components/shared/Paragraph';
-import Anchor from '../components/shared/Anchor';
 
 export default function Index() {
   return (
