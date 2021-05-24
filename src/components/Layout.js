@@ -46,13 +46,11 @@ const Layout = ({ children, ...rest }) => {
 
   const { title, description, navLinks } = data;
 
-  const isOffline = rest['*'] === 'offline-plugin-app-shell-fallback';
-
   return (
     <>
-      {!isOffline && <ToggleMode name="mode" />}
+      <ToggleMode />
       <Header title={title} description={description} />
-      {!isOffline && <Nav links={navLinks} />}
+      <Nav links={navLinks} />
       <Wrapper>
         {children}
         <Hr />

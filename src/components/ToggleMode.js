@@ -152,6 +152,9 @@ const Moon = () => (
 
 export default function ToogleMode() {
   const { isDark, setIsDark } = useContext(ModeContext);
+
+  if (typeof window === 'undefined') return null;
+
   return (
     <>
       <ToggleStyle />
