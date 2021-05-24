@@ -42,9 +42,7 @@ const Hr = styled.hr`
 `;
 
 const Layout = ({ children, ...rest }) => {
-  const data = useSiteMetaData();
-
-  const { title, description, navLinks } = data;
+  const { title, description, navLinks } = useSiteMetaData();
 
   return (
     <>
