@@ -138,14 +138,14 @@ const Sun = () => (
     style={{ right: '0.025rem' }}
     className="icon"
     role="img"
-    aria-label="Light mode"
+    aria-label="Switch to light mode"
   >
     🌞
   </span>
 );
 
 const Moon = () => (
-  <span className="icon" role="img" aria-label="Dark mode">
+  <span className="icon" role="img" aria-label="Switch to dark mode">
     🌜
   </span>
 );
@@ -156,10 +156,10 @@ export default function ToogleMode() {
   if (typeof window === 'undefined') return null;
 
   return (
-    <>
+    <aside aria-label="Choose between dark and light mode">
       <ToggleStyle />
       <Toggle
-        aria-label="Toggle mode"
+        aria-label={`Switch from ${isDark ? 'dark' : 'light'} mode to ${isDark ? 'light' : 'dark'} nmode`}
         checked={isDark}
         onChange={() => setIsDark(!isDark)}
         icons={{
@@ -167,6 +167,6 @@ export default function ToogleMode() {
           unchecked: <Sun />,
         }}
       />
-    </>
+    </aside>
   );
 }
