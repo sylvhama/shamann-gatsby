@@ -8,13 +8,9 @@ export default function Index() {
     <>
       <Seo title="About Me" keywords={['react', 'javascript', 'web']} />
       <Paragraph>
-        I am from France, I{' '}
-        <span role="img" aria-label="love">
-          💖
-        </span>{' '}
-        the Web. I mostly do Front-end development (TypeScript, React, Redux...)
-        but I do enjoy Backend as well (Node.js, GraphQL, WordPress...). I
-        embrace the <abbr title="Keep it Simple, Stupid">KISS</abbr> principle.
+        I am from France, I <span role="img" aria-label="love">💖</span> crafting stuff in the Web. 
+        If I had to list my favorite tools and libraries in no particular order it would be: React, React Testing Library, TypeScript, GraphQL and Styled Components.
+        The <abbr title="Keep it Simple, Stupid">KISS</abbr> principle is my mojo. I also try my best to act as an accessibility advocate.
       </Paragraph>
     </>
   );
