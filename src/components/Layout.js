@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Wrapper = styled.main`
+const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
   max-width: ${(props) => props.theme.breakpoint};
