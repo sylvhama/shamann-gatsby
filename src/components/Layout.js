@@ -17,9 +17,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     min-width: 300px;
-    background-color: ${props => props.theme.modeColors.background};
+    background-color: ${(props) => props.theme.modeColors.background};
     font-family: 'Roboto', sans-serif;
-    color: ${props => props.theme.modeColors.text};
+    color: ${(props) => props.theme.modeColors.text};
     transition: color 0.2s ease-out, background 0.2s ease-out;
   }
 `;
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 const Wrapper = styled.main`
   margin: 0 auto;
   padding: 0 1rem;
-  max-width: ${props => props.theme.breakpoint};
+  max-width: ${(props) => props.theme.breakpoint};
 `;
 
 const Hr = styled.hr`
@@ -50,7 +50,7 @@ const Layout = ({ children, ...rest }) => {
       <Header title={title} description={description} />
       <Nav links={navLinks} />
       <Wrapper>
-        {children}
+        <main>{children}</main>
         <Hr />
         <Footer />
       </Wrapper>

@@ -65,11 +65,12 @@ export default function Showcase() {
         were amazed to see that I could reduce the image size by roughly 70% and
         keep the same quality.
         <br /> I’ve also spent time to explain that too many HTTP requests, the
-        code was hard to maintain and new technologies like GraphQL or the BFF
-        pattern could solve our issues. I’ve explained that we must track all
-        those things with Google Analytics in order to base our future decisions
-        and priorities on its reports. I also tried to introduce the concept of
-        Design System and Atomic Design via Storybook and Figma.
+        code was hard to maintain and new technologies like GraphQL or the
+        Backends for Frontend pattern could solve our issues. I’ve explained
+        that we must track all those things with Google Analytics in order to
+        base our future decisions and priorities on its reports. I also tried to
+        introduce the concept of Design System and Atomic Design via Storybook
+        and Figma.
       </Paragraph>
       <Paragraph>
         The project was a success a we also ported it on Nintendo Switch
