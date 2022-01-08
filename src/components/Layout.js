@@ -51,7 +51,7 @@ const Layout = ({ children, ...rest }) => {
       <Nav links={navLinks} />
       <Wrapper>
         <main>
-          <section aria-describedby="page-title">{children}</section>
+          <section aria-labelledby="page-title">{children}</section>
         </main>
         <Hr />
         <Footer />
