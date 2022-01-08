@@ -82,7 +82,7 @@ const Item = styled.li`
 `;
 
 const Nav = ({ links, ...rest }) => (
-  <nav {...rest}>
+  <nav {...rest} aria-label="Main navigation">
     <List>
       {links.map(link => (
         <Item key={link.name}>
