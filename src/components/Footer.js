@@ -9,6 +9,7 @@ const StyledFooter = styled.footer`
 
 const List = styled.ul`
   margin: 0;
+  padding: 0;
   list-style: none;
 `;
 
