@@ -11,6 +11,8 @@ const List = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 1.5;
+  font-size: 1.15rem;
 `;
 
 export default function Footer() {
