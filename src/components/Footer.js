@@ -13,6 +13,10 @@ const List = styled.ul`
   list-style: none;
   line-height: 1.5;
   font-size: 1.15rem;
+
+  @media (max-width: ${props => props.theme.breakpoint}) {
+    font-size: 1rem;
+  }
 `;
 
 export default function Footer() {
