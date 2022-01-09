@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-  
   body {
     position: relative;
     margin: 0;
@@ -23,8 +22,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.modeColors.text};
     transition: color 0.2s ease-out, background 0.2s ease-out;
   }
-
-  @custom-media --motionOK (prefers-reduced-motion: no-preference);
 `;
 
 const Wrapper = styled.div`
