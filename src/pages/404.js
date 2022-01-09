@@ -1,23 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Seo from '../components/Seo';
-
-const Img = styled.img`
-  margin: 0 auto;
-  max-width: 260px;
-  width: 100%;
-  display: block;
-`;
+import Seo from "../components/Seo";
 
 export default function NotFoundPage() {
   return (
-    <>
+    <div style={{ textAlign: "center" }}>
       <Seo title="404: Not found" />
-      <Img
-        alt="Confused Travolta gif"
-        src="https://i.imgur.com/qhMbkGi.jpg"
+      <StaticImage
+        src="../images/travolta.gif"
+        placeholder="blurred"
+        layout="fixed"
+        width={280}
+        quality={100}
+        alt="Confused John Travolta scene from Pulp Fiction"
       />
-    </>
+    </div>
   );
 }
