@@ -5,7 +5,7 @@ import Seo from '../components/Seo';
 
 const Img = styled.img`
   margin: 0 auto;
-  max-width: 426px;
+  max-width: 260px;
   width: 100%;
   display: block;
 `;
@@ -16,7 +16,7 @@ export default function NotFoundPage() {
       <Seo title="404: Not found" />
       <Img
         alt="Confused Travolta gif"
-        src="https://media.giphy.com/media/hEc4k5pN17GZq/giphy.gif"
+        src="https://i.imgur.com/qhMbkGi.jpg"
       />
     </>
   );
