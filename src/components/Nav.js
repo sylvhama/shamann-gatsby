@@ -18,7 +18,10 @@ const StyledLink = styled(Link)`
     background-color: currentColor;
     opacity: 0;
     transform: scaleX(0);
-    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+
+    @media (--motionOK) {
+      transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+    }
   }
 
   &:before {
