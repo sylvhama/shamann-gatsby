@@ -10,8 +10,8 @@ import { Split } from '../components/shared/Split';
 const startDate = new Date(2013, 9, 1);
 
 export default function Experience() {
-  console.log({ isWindowDefined });
   const isWindowDefined = typeof window !== 'undefined';
+  console.log({ isWindowDefined });
 
   const today = new Date();
 
