@@ -36,7 +36,6 @@ const Text = styled.div`
   font-size: 2.25rem;
   text-transform: uppercase;
   text-align: center;
-  opacity: ${props => (props.invisible ? '0' : '1')};
 
   @media (max-width: ${props => props.theme.breakpoint}) {
     font-size: 1.25rem;
@@ -59,13 +58,12 @@ const RainbowChar = styled(Char)`
 `;
 
 export function Split({ text, invisible }) {
-  console.log({ invisible });
   const isAnimatable =
     !invisible &&
     window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
   return (
-    <Text aria-hidden invisible={invisible}>
+    <Text aria-hidden style={{ opacity: invisible ? 0 : 1 }}>
       {isAnimatable
         ? text.split('').map((char, index) => {
             return (
