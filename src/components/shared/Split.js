@@ -36,6 +36,7 @@ const Text = styled.div`
   font-size: 2.25rem;
   text-transform: uppercase;
   text-align: center;
+  opacity: ${props => (props.invisible ? '0' : '1')};
 
   @media (max-width: ${props => props.theme.breakpoint}) {
     font-size: 1.25rem;
@@ -58,15 +59,22 @@ const RainbowChar = styled(Char)`
 `;
 
 export function Split({ text }) {
+  const isWindowDefined = typeof window !== 'undefined';
+  const isAnimatable =
+    isWindowDefined &&
+    window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+
   return (
-    <Text aria-hidden>
-      {text.split('').map((char, index) => {
-        return (
-          <SlidingChar key={index} index={index}>
-            <RainbowChar index={index}>{char}</RainbowChar>
-          </SlidingChar>
-        );
-      })}
+    <Text aria-hidden invisible={!isWindowDefined}>
+      {isAnimatable
+        ? text.split('').map((char, index) => {
+            return (
+              <SlidingChar key={index} index={index}>
+                <RainbowChar index={index}>{char}</RainbowChar>
+              </SlidingChar>
+            );
+          })
+        : text}
     </Text>
   );
 }
