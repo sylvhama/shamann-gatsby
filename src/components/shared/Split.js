@@ -58,14 +58,13 @@ const RainbowChar = styled(Char)`
   animation-delay: ${props => props.index * 60}ms;
 `;
 
-export function Split({ text }) {
-  const isWindowDefined = typeof window !== 'undefined';
+export function Split({ text, invisible }) {
   const isAnimatable =
     isWindowDefined &&
     window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
   return (
-    <Text aria-hidden invisible={!isWindowDefined}>
+    <Text aria-hidden invisible={invisible}>
       {isAnimatable
         ? text.split('').map((char, index) => {
             return (

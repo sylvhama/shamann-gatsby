@@ -10,6 +10,8 @@ import { Split } from '../components/shared/Split';
 const startDate = new Date(2013, 9, 1);
 
 export default function Experience() {
+  const isWindowDefined = typeof window !== 'undefined';
+
   const today = new Date();
 
   const years = differenceInYears(today, startDate);
@@ -23,7 +25,7 @@ export default function Experience() {
       <Seo title="Relevant experience" />
 
       <Paragraph aria-hidden>{firstPart}</Paragraph>
-      <Split text={secondPart.slice(0, -1)} />
+      <Split invisible={!isWindowDefined} text={secondPart.slice(0, -1)} />
       <VisuallyHidden>
         {firstPart} {secondPart}
       </VisuallyHidden>
