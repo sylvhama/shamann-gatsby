@@ -6,4 +6,5 @@ Deployed via [Netlify](https://www.netlify.com/) 🌐
 
 Inspiration 💡:
 - nav link animation: [Codrops](https://tympanus.net/Development/LineMenuStyles/#Sebastian);
-- dark mode switch: [Overreacted](https://overreacted.io/).
+- dark mode switch: [Overreacted](https://overreacted.io/);
+- Text animation: [Building split text animations](https://web.dev/building-split-text-animations/).
