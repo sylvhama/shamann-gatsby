@@ -60,7 +60,7 @@ const RainbowChar = styled(Char)`
 
 export function Split({ text, invisible }) {
   const isAnimatable =
-    invisible &&
+    !invisible &&
     window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
   return (
