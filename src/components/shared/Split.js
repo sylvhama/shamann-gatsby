@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const slideIn = keyframes`
@@ -36,6 +36,7 @@ const Text = styled.div`
   font-size: 2.25rem;
   text-transform: uppercase;
   text-align: center;
+  opacity: ${props => (props.invisible ? 0 : 1)};
 
   @media (max-width: ${props => props.theme.breakpoint}) {
     font-size: 1.25rem;
@@ -57,13 +58,19 @@ const RainbowChar = styled(Char)`
   animation-delay: ${props => props.index * 60}ms;
 `;
 
-export function Split({ text, invisible }) {
+export function Split({ text }) {
+  const [isWindowDefined, setIsWindowDefined] = useState(false);
+
+  useEffect(() => {
+    setIsWindowDefined(true);
+  }, []);
+
   const isAnimatable =
-    !invisible &&
+    isWindowDefined &&
     window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
   return (
-    <Text aria-hidden style={{ opacity: invisible ? 0 : 1 }}>
+    <Text aria-hidden invisible={!isWindowDefined}>
       {isAnimatable
         ? text.split('').map((char, index) => {
             return (
