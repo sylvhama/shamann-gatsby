@@ -1,12 +1,45 @@
 import React from 'react';
+import differenceInYears from 'date-fns/differenceInYears';
+import differenceInMonths from 'date-fns/differenceInMonths';
 
 import Seo from '../components/Seo';
 import Paragraph from '../components/shared/Paragraph';
+import { VisuallyHidden } from '../components/VisuallyHidden';
+import { Split } from '../components/shared/Split';
+
+const startDate = new Date(2013, 9, 1);
+
+const isAnimatable =
+  typeof window !== 'undefined' &&
+  window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
 export default function Experience() {
+  const today = new Date();
+
+  const years = differenceInYears(today, startDate);
+  const months = differenceInMonths(today, startDate) - years * 12;
+
+  const firstPart = 'I have been working as a full time web developer for';
+  const secondPart = `${years} years${createSentenceEnd(months)}`;
+
   return (
     <>
       <Seo title="Relevant experience" />
+
+      {isAnimatable ? (
+        <>
+          <Paragraph aria-hidden>{firstPart}</Paragraph>
+          <Split text={secondPart.slice(0, -1)} />
+          <VisuallyHidden>
+            {firstPart} {secondPart}
+          </VisuallyHidden>
+        </>
+      ) : (
+        <Paragraph>
+          {firstPart} <em>{secondPart}</em>
+        </Paragraph>
+      )}
+
       <Paragraph>
         I graduated from <em>Lumière University Lyon 2</em> in 2013. I have a
         Bachelor’s degree <small>(in France we call that a Licence)</small> in
@@ -40,4 +73,16 @@ export default function Experience() {
       </Paragraph>
     </>
   );
+}
+
+function createSentenceEnd(months) {
+  if (months === 0) {
+    return '.';
+  }
+
+  if (months === 1) {
+    return ' and 1 month.';
+  }
+
+  return ` and ${months} months.`;
 }
