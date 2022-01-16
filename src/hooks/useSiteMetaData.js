@@ -7,7 +7,7 @@ export function useSiteMetaData() {
         siteMetadata {
           title
           description
-          author
+          site
           image
           navLinks {
             name
