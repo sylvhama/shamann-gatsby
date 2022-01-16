@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Seo from "../components/Seo";
-import gif from "../images/travolta.gif";
+import Seo from '../components/Seo';
+import gif from '../images/travolta.gif';
 
 const Img = styled.img`
   margin: 0 auto;

@@ -10,7 +10,7 @@ const ImageWrapper = styled.div`
   margin-right: 1rem;
   float: left;
 
-  @media (max-width: ${props => props.theme.breakpoint}) {
+  @media (max-width: ${(props) => props.theme.breakpoint}) {
     margin: 0 auto 1rem;
     display: flex;
     justify-content: center;

@@ -41,17 +41,17 @@ const ToggleStyle = createGlobalStyle`
   }
 
   .react-toggle-track {
-    border: 1px solid ${props => props.theme.modeColors.text};
+    border: 1px solid ${(props) => props.theme.modeColors.text};
     width: 50px;
     height: 24px;
     padding: 0;
     border-radius: 30px;
-    background-color: ${props => props.theme.modeColors.background};
+    background-color: ${(props) => props.theme.modeColors.background};
     transition: all 0.2s ease;
   }
 
   .react-toggle--checked .react-toggle-track {
-    background-color: ${props => props.theme.modeColors.background};
+    background-color: ${(props) => props.theme.modeColors.background};
   }
 
   .react-toggle-track-check {
@@ -98,9 +98,9 @@ const ToggleStyle = createGlobalStyle`
     left: 1px;
     width: 22px;
     height: 22px;
-    border: 1px solid ${props => props.theme.modeColors.text};
+    border: 1px solid ${(props) => props.theme.modeColors.text};
     border-radius: 50%;
-    background-color: ${props => props.theme.modeColors.background};
+    background-color: ${(props) => props.theme.modeColors.background};
 
     box-sizing: border-box;
 
@@ -112,11 +112,11 @@ const ToggleStyle = createGlobalStyle`
   }
 
   .react-toggle--focus .react-toggle-thumb {
-    box-shadow: 0px 0px 2px 3px ${props => props.theme.color.blue};
+    box-shadow: 0px 0px 2px 3px ${(props) => props.theme.color.blue};
   }
 
   .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
-    box-shadow: 0px 0px 5px 5px ${props => props.theme.color.blue};
+    box-shadow: 0px 0px 5px 5px ${(props) => props.theme.color.blue};
   }
 
   .react-toggle {
@@ -159,7 +159,9 @@ export default function ToogleMode() {
     <aside aria-label="Choose between dark and light mode">
       <ToggleStyle />
       <Toggle
-        aria-label={`Switch from ${isDark ? 'dark' : 'light'} mode to ${isDark ? 'light' : 'dark'} nmode`}
+        aria-label={`Switch from ${isDark ? 'dark' : 'light'} mode to ${
+          isDark ? 'light' : 'dark'
+        } nmode`}
         checked={isDark}
         onChange={() => setIsDark(!isDark)}
         icons={{

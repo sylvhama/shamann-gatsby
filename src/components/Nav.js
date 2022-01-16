@@ -38,12 +38,12 @@ const StyledLink = styled(Link)`
 
   &:hover,
   &:focus {
-    color: ${props => props.theme.color.lightBlue};
+    color: ${(props) => props.theme.color.lightBlue};
     transition: color 0.2s ease-out;
   }
 
   &.active {
-    color: ${props => props.theme.color.blue};
+    color: ${(props) => props.theme.color.blue};
     transition: color 0.2s ease-out;
 
     &:before,
@@ -58,13 +58,13 @@ const List = styled.ul`
   margin: 0 auto;
   padding: 4rem 1rem;
   width: 100%;
-  max-width: ${props => props.theme.breakpoint};
+  max-width: ${(props) => props.theme.breakpoint};
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
   list-style: none;
 
-  @media (max-width: ${props => props.theme.breakpoint}) {
+  @media (max-width: ${(props) => props.theme.breakpoint}) {
     padding: 2rem 0;
     display: block;
   }
@@ -72,7 +72,7 @@ const List = styled.ul`
 
 const Item = styled.li`
   font-size: 1.25rem;
-  font-family: ${props => props.theme.font.mono};
+  font-family: ${(props) => props.theme.font.mono};
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -80,7 +80,7 @@ const Item = styled.li`
     padding-right: 0;
   }
 
-  @media (max-width: ${props => props.theme.breakpoint}) {
+  @media (max-width: ${(props) => props.theme.breakpoint}) {
     padding: 1rem 0;
   }
 `;
@@ -88,7 +88,7 @@ const Item = styled.li`
 const Nav = ({ links, ...rest }) => (
   <nav {...rest} aria-label="Main navigation">
     <List>
-      {links.map(link => (
+      {links.map((link) => (
         <Item key={link.name}>
           <StyledLink to={link.path} activeClassName="active">
             {link.name}

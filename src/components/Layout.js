@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled, { createGlobalStyle } from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled, { createGlobalStyle } from 'styled-components';
 
-import ToggleMode from "./ToggleMode";
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
-import { useSiteMetaData } from "../hooks";
+import ToggleMode from './ToggleMode';
+import Header from './Header';
+import Nav from './Nav';
+import Footer from './Footer';
+import { useSiteMetaData } from '../hooks';
 
 const GlobalStyle = createGlobalStyle`
   * {

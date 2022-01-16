@@ -32,13 +32,13 @@ const floating = keyframes`
 
 const Text = styled.div`
   padding-bottom: 0.75rem;
-  font-family: ${props => props.theme.font.mono};
+  font-family: ${(props) => props.theme.font.mono};
   font-size: 2.25rem;
   text-transform: uppercase;
   text-align: center;
-  opacity: ${props => (props.invisible ? 0 : 1)};
+  opacity: ${(props) => (props.invisible ? 0 : 1)};
 
-  @media (max-width: ${props => props.theme.breakpoint}) {
+  @media (max-width: ${(props) => props.theme.breakpoint}) {
     font-size: 1.25rem;
   }
 `;
@@ -50,12 +50,12 @@ const Char = styled.span`
 
 const SlidingChar = styled(Char)`
   animation: ${slideIn} 1s cubic-bezier(0.5, 0, 0.5, 1) both;
-  animation-delay: ${props => props.index * 60}ms;
+  animation-delay: ${(props) => props.index * 60}ms;
 `;
 
 const RainbowChar = styled(Char)`
   animation: ${rainbow} 2s linear infinite, ${floating} 1s ease-in-out infinite;
-  animation-delay: ${props => props.index * 60}ms;
+  animation-delay: ${(props) => props.index * 60}ms;
 `;
 
 export function Split({ text }) {

@@ -7,7 +7,7 @@ export default styled.p`
   font-size: 1.15rem;
   text-align: justify;
 
-  @media (max-width: ${props => props.theme.breakpoint}) {
+  @media (max-width: ${(props) => props.theme.breakpoint}) {
     font-size: 1rem;
   }
 `;

@@ -24,18 +24,15 @@ const metaThemeColor =
 
 export default function MyThemeProvider({ children }) {
   const [isDark, setIsDark] = useState(getMode() === 'dark');
-  useEffect(
-    () => {
-      if (isWindowDefined) {
-        window.localStorage.setItem('mode', isDark ? 'dark' : 'light');
-        metaThemeColor.setAttribute(
-          'content',
-          theme(isDark).modeColors.background
-        );
-      }
-    },
-    [isDark]
-  );
+  useEffect(() => {
+    if (isWindowDefined) {
+      window.localStorage.setItem('mode', isDark ? 'dark' : 'light');
+      metaThemeColor.setAttribute(
+        'content',
+        theme(isDark).modeColors.background
+      );
+    }
+  }, [isDark]);
   return (
     <ModeContext.Provider value={{ isDark, setIsDark }}>
       <ThemeProvider theme={theme(isDark)}>{children}</ThemeProvider>

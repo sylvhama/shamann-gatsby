@@ -14,12 +14,12 @@ const Wrapper = styled.header`
 
   img {
     border-radius: 50%;
-    @media (max-width: ${props => props.theme.breakpoint}) {
+    @media (max-width: ${(props) => props.theme.breakpoint}) {
       margin-bottom: 1rem;
     }
   }
 
-  @media (max-width: ${props => props.theme.breakpoint}) {
+  @media (max-width: ${(props) => props.theme.breakpoint}) {
     padding-top: 2rem;
     flex-direction: column;
     text-align: center;
