@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Sylvain Hamann',
     description: 'Web Developer',
-    author: '@sylvhama',
-    image: '/shamann.png',
+    site: '@sylvhama',
+    image: 'https://shamann.dev/shamann.png',
     navLinks: [
       { name: 'About Me', path: '/' },
       { name: 'Relevant Experience', path: '/relevant-experience/' },

@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import { useSiteMetaData } from "../hooks";
-import { VisuallyHidden } from "./VisuallyHidden";
+import { useSiteMetaData } from '../hooks';
+import { VisuallyHidden } from './VisuallyHidden';
 
 function Seo({ description, lang, meta, keywords, title }) {
   const {
     title: defaultTitle,
     description: defaultDescription,
     image,
-    author,
+    site,
   } = useSiteMetaData();
   const siteTitle = `${title} | ${defaultTitle}`;
   const metaDescription = description || defaultDescription;
@@ -28,51 +28,53 @@ function Seo({ description, lang, meta, keywords, title }) {
         titleTemplate={`%s | ${defaultTitle}`}
         meta={[
           {
-            name: "description",
+            name: 'description',
             content: metaDescription,
           },
           {
-            property: "og:title",
+            property: 'og:title',
             content: siteTitle,
           },
           {
-            property: "og:description",
+            property: 'og:description',
             content: metaDescription,
           },
           {
-            property: "og:type",
-            content: "website",
+            property: 'og:type',
+            content: 'website',
           },
           {
-            property: "og:image",
+            property: 'og:image',
             content: image,
           },
+          { property: 'og:image:width', content: '500' },
+          { property: 'og:image:height', content: '500' },
           {
-            name: "twitter:card",
-            content: "summary",
+            name: 'twitter:card',
+            content: 'summary',
           },
           {
-            name: "twitter:creator",
-            content: author,
+            name: 'twitter:site',
+            content: site,
           },
           {
-            name: "twitter:title",
+            name: 'twitter:title',
             content: siteTitle,
           },
           {
-            name: "twitter:description",
+            name: 'twitter:description',
             content: metaDescription,
           },
           {
-            name: "twitter:image",
+            name: 'twitter:image',
             content: image,
           },
         ]
           .concat(
             keywords.length > 0
               ? {
-                  name: "keywords",
-                  content: keywords.join(", "),
+                  name: 'keywords',
+                  content: keywords.join(', '),
                 }
               : []
           )
@@ -83,7 +85,7 @@ function Seo({ description, lang, meta, keywords, title }) {
 }
 
 Seo.defaultProps = {
-  lang: "en",
+  lang: 'en',
   meta: [],
   keywords: [],
 };
