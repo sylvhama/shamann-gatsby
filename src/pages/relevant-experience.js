@@ -2,7 +2,7 @@ import React from 'react';
 import differenceInYears from 'date-fns/differenceInYears';
 import differenceInMonths from 'date-fns/differenceInMonths';
 
-import Seo from '../components/Seo';
+import Section from '../components/Seo';
 import Paragraph from '../components/shared/Paragraph';
 import { VisuallyHidden } from '../components/VisuallyHidden';
 import { Split } from '../components/shared/Split';
@@ -19,9 +19,7 @@ export default function Experience() {
   const secondPart = `${years} years${createSentenceEnd(months)}`;
 
   return (
-    <>
-      <Seo title="Relevant experience" />
-
+    <Section title="Relevant experience">
       <Paragraph aria-hidden>{firstPart}</Paragraph>
       <Split text={secondPart.slice(0, -1)} />
       <VisuallyHidden>
@@ -59,7 +57,7 @@ export default function Experience() {
         Nowadays I am working at <strong>Shopify</strong> as a web developer,
         trying to make commerce better for everyone.
       </Paragraph>
-    </>
+    </Section>
   );
 }
 

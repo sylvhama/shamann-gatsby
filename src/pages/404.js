@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Seo from '../components/Seo';
+import Section from '../components/Seo';
 import gif from '../images/travolta.gif';
 
 const Img = styled.img`
@@ -13,9 +13,8 @@ const Img = styled.img`
 
 export default function NotFoundPage() {
   return (
-    <>
-      <Seo title="404: Not found" />
+    <Section title="404: Not found">
       <Img alt="Confused John Travolta scene from Pulp Fiction" src={gif} />
-    </>
+    </Section>
   );
 }

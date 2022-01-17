@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Seo from '../components/Seo';
+import Section from '../components/Seo';
 import Paragraph from '../components/shared/Paragraph';
 import Anchor from '../components/shared/Anchor';
 
@@ -14,8 +14,7 @@ const Quote = styled.blockquote`
 
 export default function Showcase() {
   return (
-    <>
-      <Seo title="Showcase" />
+    <Section title="Showcase">
       <Paragraph>
         I don't want to spam screenshots of all projects I've worked on. Please
         visit my{' '}
@@ -85,6 +84,6 @@ export default function Showcase() {
         </Anchor>{' '}
         focusing on the navigation and others UX tips.
       </Paragraph>
-    </>
+    </Section>
   );
 }

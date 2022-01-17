@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import { useSiteMetaData } from '../hooks';
-import { VisuallyHidden } from './VisuallyHidden';
 
 function Seo({ description, lang, meta, keywords, title }) {
   const {
@@ -16,71 +15,66 @@ function Seo({ description, lang, meta, keywords, title }) {
   const metaDescription = description || defaultDescription;
 
   return (
-    <>
-      <VisuallyHidden>
-        <h2 id="page-title">{title}</h2>
-      </VisuallyHidden>
-      <Helmet
-        htmlAttributes={{
-          lang,
-        }}
-        title={title}
-        titleTemplate={`%s | ${defaultTitle}`}
-        meta={[
-          {
-            name: 'description',
-            content: metaDescription,
-          },
-          {
-            property: 'og:title',
-            content: siteTitle,
-          },
-          {
-            property: 'og:description',
-            content: metaDescription,
-          },
-          {
-            property: 'og:type',
-            content: 'website',
-          },
-          {
-            property: 'og:image',
-            content: image,
-          },
-          { property: 'og:image:width', content: '500' },
-          { property: 'og:image:height', content: '500' },
-          {
-            name: 'twitter:card',
-            content: 'summary',
-          },
-          {
-            name: 'twitter:site',
-            content: site,
-          },
-          {
-            name: 'twitter:title',
-            content: siteTitle,
-          },
-          {
-            name: 'twitter:description',
-            content: metaDescription,
-          },
-          {
-            name: 'twitter:image',
-            content: image,
-          },
-        ]
-          .concat(
-            keywords.length > 0
-              ? {
-                  name: 'keywords',
-                  content: keywords.join(', '),
-                }
-              : []
-          )
-          .concat(meta)}
-      />
-    </>
+    <Helmet
+      htmlAttributes={{
+        lang,
+      }}
+      title={title}
+      titleTemplate={`%s | ${defaultTitle}`}
+      meta={[
+        {
+          name: 'description',
+          content: metaDescription,
+        },
+        {
+          property: 'og:title',
+          content: siteTitle,
+        },
+        {
+          property: 'og:description',
+          content: metaDescription,
+        },
+        {
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          property: 'og:image',
+          content: image,
+        },
+        { property: 'og:image:width', content: '500' },
+        { property: 'og:image:height', content: '500' },
+        {
+          name: 'twitter:card',
+          content: 'summary',
+        },
+        {
+          name: 'twitter:site',
+          content: site,
+        },
+        {
+          name: 'twitter:title',
+          content: siteTitle,
+        },
+        {
+          name: 'twitter:description',
+          content: metaDescription,
+        },
+        {
+          name: 'twitter:image',
+          content: image,
+        },
+      ]
+        .concat(
+          keywords.length > 0
+            ? {
+                name: 'keywords',
+                content: keywords.join(', '),
+              }
+            : []
+        )
+        .concat(meta)}
+    />
   );
 }
 

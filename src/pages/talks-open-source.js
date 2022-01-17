@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import Seo from '../components/Seo';
+import Section from '../components/Seo';
 import Paragraph from '../components/shared/Paragraph';
 import Anchor from '../components/shared/Anchor';
 
@@ -10,7 +10,7 @@ const ImageWrapper = styled.div`
   margin-right: 1rem;
   float: left;
 
-  @media (max-width: ${(props) => props.theme.breakpoint}) {
+  @media (max-width: ${props => props.theme.breakpoint}) {
     margin: 0 auto 1rem;
     display: flex;
     justify-content: center;
@@ -20,8 +20,7 @@ const ImageWrapper = styled.div`
 
 export default function Talks() {
   return (
-    <>
-      <Seo title="Talks & Open Source" />
+    <Section title="Talks & Open Source">
       <ImageWrapper>
         <StaticImage
           src="../images/shamann-speaker.jpg"
@@ -58,6 +57,6 @@ export default function Talks() {
         </Anchor>{' '}
         about my experience as a web developer.
       </Paragraph>
-    </>
+    </Section>
   );
 }
