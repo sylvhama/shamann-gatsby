@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from '../components/Seo';
+import Section from '../components/Section';
 import Paragraph from '../components/shared/Paragraph';
 
 export default function Index() {

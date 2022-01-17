@@ -2,7 +2,7 @@ import React from 'react';
 import differenceInYears from 'date-fns/differenceInYears';
 import differenceInMonths from 'date-fns/differenceInMonths';
 
-import Section from '../components/Seo';
+import Section from '../components/Section';
 import Paragraph from '../components/shared/Paragraph';
 import { VisuallyHidden } from '../components/VisuallyHidden';
 import { Split } from '../components/shared/Split';

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Section from '../components/Seo';
+import Section from '../components/Section';
 import Paragraph from '../components/shared/Paragraph';
 import Anchor from '../components/shared/Anchor';
 
