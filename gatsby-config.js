@@ -16,7 +16,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Sylvain Hamann',
         short_name: 'shamann',
@@ -33,6 +33,21 @@ module.exports = {
         google: {
           families: ['Roboto+Mono:300,700', 'Roboto:400,700&display=swap'],
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/LayoutPortfolio.js'),
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'portfolio',
+        path: `${__dirname}/src/pages/portfolio`,
       },
     },
     'gatsby-plugin-styled-components',
