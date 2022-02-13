@@ -4,7 +4,7 @@ import differenceInMonths from 'date-fns/differenceInMonths';
 
 import Section from '../components/Section';
 import Paragraph from '../components/shared/Paragraph';
-import Subtitle from '../components/shared/Subtitle';
+import SectionSubtitle from '../components/shared/SectionSubtitle';
 import { VisuallyHidden } from '../components/shared/VisuallyHidden';
 import { Split } from '../components/shared/Split';
 
@@ -27,7 +27,7 @@ export default function Experience() {
         {firstPart} {secondPart}
       </VisuallyHidden>
 
-      <Subtitle>Apr 2019 - Present</Subtitle>
+      <SectionSubtitle>Apr 2019 - Present</SectionSubtitle>
       <Paragraph>
         Nowadays I am working remotely for <strong>Shopify</strong>. I
         contributed to merchant facing experiences (Shopify Admin, Polaris
@@ -37,7 +37,7 @@ export default function Experience() {
         with a cross-disciplines team.
       </Paragraph>
 
-      <Subtitle>Jul 2017 - Apr 2019</Subtitle>
+      <SectionSubtitle>Jul 2017 - Apr 2019</SectionSubtitle>
       <Paragraph>
         I worked at <strong>Ubisoft Montreal</strong> in Canada as a web
         developer for almost two years. My main activity was to maintain and
@@ -48,7 +48,7 @@ export default function Experience() {
         the main menu of Assassin's Creed Origins and Odyssey.
       </Paragraph>
 
-      <Subtitle>Sep 2013 - Feb 2017</Subtitle>
+      <SectionSubtitle>Sep 2013 - Feb 2017</SectionSubtitle>
       <Paragraph>
         After I graduated, I have worked as a web developer for two years at
         Asiance, a digital agency located in <strong>Seoul</strong>. I also have{' '}
@@ -59,7 +59,7 @@ export default function Experience() {
         for worldwide clients such as Lacoste or Air France.
       </Paragraph>
 
-      <Subtitle>Studies</Subtitle>
+      <SectionSubtitle>Studies</SectionSubtitle>
       <Paragraph>
         I graduated from <em>Lumière University Lyon 2</em> in 2013. I have a{' '}
         <strong>Master’s degree</strong> in computer science where I focused on

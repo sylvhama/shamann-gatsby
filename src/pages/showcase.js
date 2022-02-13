@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Section from '../components/Section';
-import Subtitle from '../components/shared/Subtitle';
+import SectionSubtitle from '../components/shared/SectionSubtitle';
 import Paragraph from '../components/shared/Paragraph';
 import Anchor from '../components/shared/Anchor';
 
@@ -13,7 +13,7 @@ export default function Showcase() {
         projects.
       </Paragraph>
 
-      <Subtitle>Ubisoft Club console app (2017-2019)</Subtitle>
+      <SectionSubtitle>Ubisoft Club console app (2017-2019)</SectionSubtitle>
       <Paragraph>
         I was part of a team in charge of re-writing a five years old
         Single-Page Application used by Ubisoft games on PlayStation 4 and Xbox
@@ -31,7 +31,7 @@ export default function Showcase() {
         your work.
       </Paragraph>
 
-      <Subtitle>Interactive hospital map (2016)</Subtitle>
+      <SectionSubtitle>Interactive hospital map (2016)</SectionSubtitle>
       <Paragraph>
         I developed an interactive map via <em>PixiJs</em> and <em>tween.js</em>{' '}
         for a hospital. The map was represented as a tilemap, imagine a 2D
@@ -45,7 +45,7 @@ export default function Showcase() {
         showing the result.
       </Paragraph>
 
-      <Subtitle>Offline first guest check-in app (2014)</Subtitle>
+      <SectionSubtitle>Offline first guest check-in app (2014)</SectionSubtitle>
       <Paragraph>
         We had a client in South Korea who was organizing networking events. We
         first developed an online quiz that would have new questions at each
