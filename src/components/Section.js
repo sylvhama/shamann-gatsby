@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { VisuallyHidden } from './VisuallyHidden';
-import Seo from './Seo';
+import { VisuallyHidden } from './shared/VisuallyHidden';
+import Seo from './shared/Seo';
 
 const ID = 'page-title';
 

@@ -5,7 +5,7 @@ import differenceInMonths from 'date-fns/differenceInMonths';
 import Section from '../components/Section';
 import Paragraph from '../components/shared/Paragraph';
 import Subtitle from '../components/shared/Subtitle';
-import { VisuallyHidden } from '../components/VisuallyHidden';
+import { VisuallyHidden } from '../components/shared/VisuallyHidden';
 import { Split } from '../components/shared/Split';
 
 const startDate = new Date(2013, 9, 1);

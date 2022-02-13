@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import { useSiteMetaData } from '../hooks';
+import { useSiteMetaData } from '../../hooks';
 
 function Seo({ description, lang, meta, keywords, title }) {
   const {
