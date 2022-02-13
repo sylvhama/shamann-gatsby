@@ -39,7 +39,7 @@ const Header = ({ title, description, ...rest }) => (
     />
     <div>
       <Title>{title}</Title>
-      <Subtitle>{description}</Subtitle>
+      <Subtitle withoutPadding>{description}</Subtitle>
     </div>
   </Wrapper>
 );
