@@ -37,8 +37,8 @@ export default function Showcase() {
         for a hospital. The map was represented as a tilemap, imagine a 2D
         matrix where each cell can be a wall, a walkable floor etc... There was
         an editor app to design your map by drawing each tile or placing special
-        sprites. I used a pathfinding algorithm in order to draw the path
-        between two tiles. Here is a{' '}
+        sprites. I used a pathfinding algorithm in order to draw the shortest
+        path between two tiles. Here is a{' '}
         <Anchor href="https://www.youtube.com/watch?v=fL5GDCH7VpM">
           video
         </Anchor>{' '}
