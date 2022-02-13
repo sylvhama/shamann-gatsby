@@ -29,12 +29,12 @@ export default function Experience() {
 
       <SectionSubtitle>Apr 2019 - Present</SectionSubtitle>
       <Paragraph>
-        Nowadays I am working remotely for <strong>Shopify</strong>. I
-        contributed to merchant facing experiences (Shopify Admin, Polaris
-        design system) and buyer facing experiences (Customer Accounts). I acted
-        as an accessibility advocate within my team. I mentored several
-        developers via code reviews and pair programming. I championed a project
-        with a cross-disciplines team.
+        Nowadays I am working remotely for <strong>Shopify</strong>, I am based
+        in Montreal. I contributed to merchant facing experiences (Shopify
+        Admin, Polaris design system) and buyer facing experiences (Customer
+        Accounts). I acted as an accessibility advocate within my team. I
+        mentored several developers via code reviews and pair programming. I
+        championed a project with a cross-disciplines team.
       </Paragraph>
 
       <SectionSubtitle>Jul 2017 - Apr 2019</SectionSubtitle>
