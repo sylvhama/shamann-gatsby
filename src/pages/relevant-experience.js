@@ -27,23 +27,14 @@ export default function Experience() {
         {firstPart} {secondPart}
       </VisuallyHidden>
 
-      <Subtitle>Studies</Subtitle>
+      <Subtitle>Apr 2019 - Present</Subtitle>
       <Paragraph>
-        I graduated from <em>Lumière University Lyon 2</em> in 2013. I have a{' '}
-        <strong>Master’s degree</strong> in computer science where I focused on
-        web development. During my studies, I have interned at four different
-        companies in France, Luxembourg and South Korea.
-      </Paragraph>
-
-      <Subtitle>Sep 2013 - Feb 2017</Subtitle>
-      <Paragraph>
-        After I graduated, I have worked as a web developer for two years at
-        Asiance, a digital agency located in <strong>Seoul</strong>. I also have{' '}
-        worked in <strong>Tokyo</strong> as a web developer for two digital
-        agencies. I initially joined Netwise for eight months and then I worked
-        at Cream for roughly one year. During my time in Asia I've contributed
-        to roughly <strong>30 web applications and responsive websites</strong>{' '}
-        for worldwide clients such as Lacoste or Air France.
+        Nowadays I am working remotely for <strong>Shopify</strong>. I
+        contributed to merchant facing experiences (Shopify Admin, Polaris
+        design system) and buyer facing experiences (Customer Accounts). I acted
+        as an accessibility advocate within my team. I mentored several
+        developers via code reviews and pair programming. I championed a project
+        with a cross-disciplines team.
       </Paragraph>
 
       <Subtitle>Jul 2017 - Apr 2019</Subtitle>
@@ -57,14 +48,23 @@ export default function Experience() {
         the main menu of Assassin's Creed Origins and Odyssey.
       </Paragraph>
 
-      <Subtitle>Apr 2019 - Present</Subtitle>
+      <Subtitle>Sep 2013 - Feb 2017</Subtitle>
       <Paragraph>
-        Nowadays I am working remotely for <strong>Shopify</strong>. I
-        contributed to merchant facing experiences (Shopify Admin, Polaris
-        design system) and buyer facing experiences (Customer Accounts). I acted
-        as an accessibility advocate within my team. I mentored several
-        developers via code reviews and pair programming. I championed a project
-        with a cross-disciplines team.
+        After I graduated, I have worked as a web developer for two years at
+        Asiance, a digital agency located in <strong>Seoul</strong>. I also have{' '}
+        worked in <strong>Tokyo</strong> as a web developer for two digital
+        agencies. I initially joined Netwise for eight months and then I worked
+        at Cream for roughly one year. During my time in Asia I've contributed
+        to roughly <strong>30 web applications and responsive websites</strong>{' '}
+        for worldwide clients such as Lacoste or Air France.
+      </Paragraph>
+
+      <Subtitle>Studies</Subtitle>
+      <Paragraph>
+        I graduated from <em>Lumière University Lyon 2</em> in 2013. I have a{' '}
+        <strong>Master’s degree</strong> in computer science where I focused on
+        web development. During my studies, I have interned at four different
+        companies in France, Luxembourg and South Korea.
       </Paragraph>
     </Section>
   );
