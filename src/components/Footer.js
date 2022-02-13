@@ -43,10 +43,6 @@ export default function Footer() {
             <Anchor href="https://www.behance.net/sylvhama/">Behance</Anchor>.
           </li>
           <li>
-            Follow me on{' '}
-            <Anchor href="https://twitter.com/sylvhama/">Twitter</Anchor>.
-          </li>
-          <li>
             See some of my code on{' '}
             <Anchor href="https://github.com/sylvhama">GitHub</Anchor>.
           </li>
