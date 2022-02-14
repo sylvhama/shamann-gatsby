@@ -32,7 +32,7 @@ export default function Footer() {
             .
           </li>
           <li>
-            You can also download it as PDF on{' '}
+            You can export my resume as PDF on{' '}
             <Anchor href="https://docs.google.com/document/d/1VybgVJOKbZOqbQwRfGkYp--9yP-xXfMF5TA7s8M250I/edit?usp=sharing">
               Google Drive
             </Anchor>
