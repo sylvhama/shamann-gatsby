@@ -8,7 +8,7 @@ export default function Index() {
     <Section title="About Me" keywords={['react', 'javascript', 'web']}>
       <Paragraph>
         I’m a French citizen and a permanent resident of Canada working remotely
-        in Montreal. . I{' '}
+        in Montreal. I{' '}
         <span role="img" aria-label="loves">
           💖
         </span>{' '}
