@@ -32,9 +32,9 @@ export default function Experience() {
         Nowadays I am working remotely for <strong>Shopify</strong>, I am based
         in Montreal. I contributed to merchant facing experiences (Shopify
         Admin, Polaris design system) and buyer facing experiences (Customer
-        Accounts). I acted as an accessibility advocate within my team. I
-        mentored several developers via code reviews and pair programming. I
-        championed a project with a cross-disciplines team.
+        Accounts) while. acting as an accessibility advocate. I
+        mentored developers via code reviews and pair programming and
+        championed projects projects with multidisciplinary teams.
       </Paragraph>
 
       <SectionSubtitle>Jul 2017 - Apr 2019</SectionSubtitle>
