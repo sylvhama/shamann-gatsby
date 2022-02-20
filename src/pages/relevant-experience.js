@@ -71,8 +71,9 @@ export default function Experience() {
       <Paragraph>
         I graduated from <em>Lumière University Lyon 2</em> in 2013. I have a{' '}
         <strong>Master’s degree</strong> in computer science where I focused on
-        web development. During my studies, I have interned at four different
-        companies in France, Luxembourg and South Korea.
+        web development. I also have a License 3 (undergraduate degree) in data
+        science. I have interned at four different companies in France,
+        Luxembourg and South Korea.
       </Paragraph>
     </Section>
   );
