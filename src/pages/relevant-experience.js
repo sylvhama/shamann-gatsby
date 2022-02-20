@@ -27,17 +27,21 @@ export default function Experience() {
         {firstPart} {secondPart}
       </VisuallyHidden>
 
-      <SectionSubtitle>Apr 2019 - Present</SectionSubtitle>
+      <SectionSubtitle>
+        Apr 2019 - Present <span aria-hidden="true">🇨🇦 🛍️</span>
+      </SectionSubtitle>
       <Paragraph>
-        Nowadays I am working remotely for <strong>Shopify</strong>, I am based
-        in Montreal. I contributed to merchant facing experiences (Shopify
-        Admin, Polaris design system) and buyer facing experiences (Customer
-        Accounts) while acting as an accessibility advocate within my team. I
-        mentored developers via code reviews and pair programming.
-        I championed projects with multidisciplinary teams.
+        Nowadays I am working remotely in Montreal for <strong>Shopify</strong>.
+        I contributed to merchant facing experiences (Shopify Admin, Polaris
+        design system) and buyer facing experiences (Customer Accounts) while
+        acting as an accessibility advocate within my team. I mentored
+        developers via code reviews and pair programming. I also championed
+        projects with multidisciplinary teams.
       </Paragraph>
 
-      <SectionSubtitle>Jul 2017 - Apr 2019</SectionSubtitle>
+      <SectionSubtitle>
+        Jul 2017 - Apr 2019 <span aria-hidden="true">🇨🇦 🎮</span>
+      </SectionSubtitle>
       <Paragraph>
         I worked at <strong>Ubisoft Montreal</strong> in Canada as a web
         developer for almost two years. My main activity was to maintain and
@@ -48,7 +52,9 @@ export default function Experience() {
         the main menu of Assassin's Creed Origins and Odyssey.
       </Paragraph>
 
-      <SectionSubtitle>Sep 2013 - Feb 2017</SectionSubtitle>
+      <SectionSubtitle>
+        Sep 2013 - Feb 2017 <span aria-hidden="true">🇰🇷 🇯🇵</span>
+      </SectionSubtitle>
       <Paragraph>
         After I graduated, I have worked as a web developer for two years at
         Asiance, a digital agency located in <strong>Seoul</strong>. I also have{' '}
@@ -59,7 +65,9 @@ export default function Experience() {
         for worldwide clients such as Lacoste or Air France.
       </Paragraph>
 
-      <SectionSubtitle>Studies</SectionSubtitle>
+      <SectionSubtitle>
+        Studies <span aria-hidden="true">🇫🇷 🎓</span>
+      </SectionSubtitle>
       <Paragraph>
         I graduated from <em>Lumière University Lyon 2</em> in 2013. I have a{' '}
         <strong>Master’s degree</strong> in computer science where I focused on
