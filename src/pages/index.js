@@ -9,7 +9,7 @@ export default function Index() {
       <Paragraph>
         I’m a French citizen and a permanent resident of Canada working remotely
         in Montreal. I{' '}
-        <span role="img" aria-label="loves">
+        <span role="img" aria-label="love">
           💖
         </span>{' '}
         crafting stuff in the Web. If I had to list my favorite tools and
