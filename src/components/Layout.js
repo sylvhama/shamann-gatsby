@@ -21,9 +21,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     min-width: 300px;
-    background-color: ${props => props.theme.modeColors.background};
+    background-color: var(--background-color);
     font-family: 'Roboto', sans-serif;
-    color: ${props => props.theme.modeColors.text};
+    color: var(--text-color);
     transition: color 0.2s ease-out, background 0.2s ease-out;
   }
 `;
