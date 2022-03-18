@@ -7,6 +7,7 @@ const StyledLink = styled(Link)`
   position: relative;
   text-decoration: none;
   color: var(--text-color);
+  transition: color 0.2s ease-out;
 
   &:before,
   &:after {
