@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const StyledLink = styled(Link)`
   position: relative;
   text-decoration: none;
-  color: currentColor;
+  color: var(--text-color);
 
   &:before,
   &:after {
