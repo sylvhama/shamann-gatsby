@@ -41,17 +41,17 @@ const ToggleStyle = createGlobalStyle`
   }
 
   .react-toggle-track {
-    border: 1px solid ${(props) => props.theme.modeColors.text};
+    border: 1px solid var(--text-color);
     width: 50px;
     height: 24px;
     padding: 0;
     border-radius: 30px;
-    background-color: ${(props) => props.theme.modeColors.background};
+    background-color: var(--background-color);
     transition: all 0.2s ease;
   }
 
   .react-toggle--checked .react-toggle-track {
-    background-color: ${(props) => props.theme.modeColors.background};
+    background-color: var(--background-color);
   }
 
   .react-toggle-track-check {
@@ -98,9 +98,9 @@ const ToggleStyle = createGlobalStyle`
     left: 1px;
     width: 22px;
     height: 22px;
-    border: 1px solid ${(props) => props.theme.modeColors.text};
+    border: 1px solid var(--text-color);
     border-radius: 50%;
-    background-color: ${(props) => props.theme.modeColors.background};
+    background-color: var(--background-color);
 
     box-sizing: border-box;
 
