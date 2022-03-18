@@ -9,6 +9,10 @@ import Footer from './Footer';
 import { useSiteMetaData } from '../hooks';
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --text-color: ${props => props.theme.modeColors.text};
+    --background-color:  ${props => props.theme.modeColors.background};
+  }
   * {
     box-sizing: border-box;
   }
