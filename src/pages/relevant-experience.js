@@ -28,7 +28,7 @@ export default function Experience() {
       </VisuallyHidden>
 
       <SectionSubtitle>
-        Apr 2019 - Present <span aria-hidden="true">🇨🇦 🛍️</span>
+        Apr 2019 - June 2022 <span aria-hidden="true">🇨🇦 🛍️</span>
       </SectionSubtitle>
       <Paragraph>
         Nowadays I am working remotely in Montreal for <strong>Shopify</strong>.
