@@ -31,7 +31,7 @@ export default function Experience() {
         Apr 2019 - May 2022 <span aria-hidden="true">🇨🇦 🛍️</span>
       </SectionSubtitle>
       <Paragraph>
-        Nowadays I am working remotely in Montreal for <strong>Shopify</strong>.
+        I worked for <strong>Shopify</strong> in their Montreal office then remotely after COVID.
         I contributed to merchant facing experiences (Shopify Admin, Polaris
         design system) and buyer facing experiences (Customer Accounts) while
         acting as an accessibility advocate within my team. I mentored
