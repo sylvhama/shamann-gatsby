@@ -36,7 +36,7 @@ export default function Experience() {
         I contributed to merchant facing experiences (Shopify Admin, Polaris
         design system) and buyer facing experiences (Customer Accounts) while
         acting as an{' '}
-        <Anchor hrf="https://dev.to/sylvhama/how-to-test-your-web-app-accessibility-26di">accessibility advocate</Anchor>{' '}
+        <Anchor href="https://dev.to/sylvhama/how-to-test-your-web-app-accessibility-26di">accessibility advocate</Anchor>{' '}
         within my team. I mentored
         developers via code reviews and pair programming. I also championed
         projects with multidisciplinary teams.
