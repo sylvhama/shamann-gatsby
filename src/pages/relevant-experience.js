@@ -5,6 +5,7 @@ import differenceInMonths from 'date-fns/differenceInMonths';
 import Section from '../components/Section';
 import Paragraph from '../components/shared/Paragraph';
 import SectionSubtitle from '../components/shared/SectionSubtitle';
+import Anchor from '../components/shared/Anchor';
 import { VisuallyHidden } from '../components/shared/VisuallyHidden';
 import { Split } from '../components/shared/Split';
 
@@ -34,7 +35,9 @@ export default function Experience() {
         I worked for <strong>Shopify</strong> in their Montreal office then remotely after COVID.
         I contributed to merchant facing experiences (Shopify Admin, Polaris
         design system) and buyer facing experiences (Customer Accounts) while
-        acting as an accessibility advocate within my team. I mentored
+        acting as an{' '}
+        <Anchor hrf="">accessibility advocate</Anchor>{' '}
+        within my team. I mentored
         developers via code reviews and pair programming. I also championed
         projects with multidisciplinary teams.
       </Paragraph>
