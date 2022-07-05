@@ -32,7 +32,7 @@ export default function Experience() {
         Jul 2022 - Present <span aria-hidden="true">🌐 📊</span>
       </SectionSubtitle>
       <Paragraph>
-        Working remotely in Montreal as a front-end developer.
+        I am currently working for <strong>Meta</strong> as a front-end developer.
       </Paragraph>
 
       <SectionSubtitle>
