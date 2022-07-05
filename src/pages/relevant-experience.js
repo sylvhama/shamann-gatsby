@@ -29,6 +29,13 @@ export default function Experience() {
       </VisuallyHidden>
 
       <SectionSubtitle>
+        Jul 2022 - Present <span aria-hidden="true">🌐 📊</span>
+      </SectionSubtitle>
+      <Paragraph>
+        Working remotely in Montreal as a front-end developer.
+      </Paragraph>
+
+      <SectionSubtitle>
         Apr 2019 - Jun 2022 <span aria-hidden="true">🇨🇦 🛍️</span>
       </SectionSubtitle>
       <Paragraph>
