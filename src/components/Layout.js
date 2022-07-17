@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     min-width: 300px;
     background-color: var(--background-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: var(--text-color);
     transition: color 0.2s ease-out, background 0.2s ease-out;
   }
