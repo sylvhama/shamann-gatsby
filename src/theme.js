@@ -3,7 +3,7 @@ const base = {
     lightBlue: '#B3E5FC',
     blue: '#03A9F4',
   },
-  font: { mono: 'monospace' },
+  font: { mono: '"Lucida Console", Courier, monospace;' },
   breakpoint: '640px',
 };
 
