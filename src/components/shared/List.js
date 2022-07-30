@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const List = styled.ul`
     margin: 0;
-    padding: 0;
-    list-style: ${(props) => props.showMarker ? 'initial' : 'none'};
+    ${(props) =>
+      props.hideMarkers &&
+      `
+        list-style: none;
+        padding: 0;
+    `};
     line-height: 1.5;
     font-size: 1.15rem;
 

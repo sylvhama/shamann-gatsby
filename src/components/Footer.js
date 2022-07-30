@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <nav aria-label="External links">
-        <List>
+        <List hideMarkers>
           <li>
             View my complete resume on{" "}
             <Anchor href="https://www.linkedin.com/in/sylvainhamann">

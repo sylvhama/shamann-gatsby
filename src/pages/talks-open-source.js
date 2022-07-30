@@ -55,7 +55,7 @@ export default function Talks() {
       </Paragraph>
 
       <SectionSubtitle>My talks</SectionSubtitle>
-      <List showMarker>
+      <List>
         <li>
           <Anchor href="https://github.com/sylvhama/bringing-the-www-to-the-aaa">
             Bringing the WWW to the AAA
@@ -88,7 +88,7 @@ export default function Talks() {
       </List>
 
       <SectionSubtitle>My articles</SectionSubtitle>
-      <List showMarker>
+      <List>
         <li>
           <Anchor href="https://dev.to/sylvhama/how-to-test-your-web-app-accessibility-26di">
             How to test your web app accessibility?
