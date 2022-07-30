@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Anchor from "./shared/Anchor";
-import List from "./shared/List";
+import { List } from "./shared/List";
 
 const StyledFooter = styled.footer`
   padding-bottom: 2rem;
