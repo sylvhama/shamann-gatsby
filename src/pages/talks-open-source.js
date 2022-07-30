@@ -54,6 +54,34 @@ export default function Talks() {
         about my experience as a web developer.
       </Paragraph>
 
+      <SectionSubtitle>My articles</SectionSubtitle>
+      <List>
+        <li>
+          <Anchor href="https://dev.to/sylvhama/how-to-test-your-web-app-accessibility-26di">
+            How to test your web app accessibility?
+          </Anchor>{" "}
+          - Jun 21, 2022
+        </li>
+        <li>
+          <Anchor href="https://github.com/sylvhama/pwa-links">
+            Progressive Web Apps links
+          </Anchor>{" "}
+          - Jun 17, 2020
+        </li>
+        <li>
+          <Anchor href="https://dev.to/sylvhama/multi-directional-navigation-31k2">
+            Multi Directional Navigation
+          </Anchor>{" "}
+          - Jun 8, 2020
+        </li>
+        <li>
+          <Anchor href="https://github.com/sylvhama/modern-js">
+            Road to Modern JavaScript and React
+          </Anchor>{" "}
+          - Nov 8, 2017
+        </li>
+      </List>
+
       <SectionSubtitle>My talks</SectionSubtitle>
       <List>
         <li>
@@ -84,34 +112,6 @@ export default function Talks() {
         <li>
           Let's make a HTML5 game with Phaser! - Seoul Web Technology Meetup at
           Asiance - Mar 5, 2015
-        </li>
-      </List>
-
-      <SectionSubtitle>My articles</SectionSubtitle>
-      <List>
-        <li>
-          <Anchor href="https://dev.to/sylvhama/how-to-test-your-web-app-accessibility-26di">
-            How to test your web app accessibility?
-          </Anchor>{" "}
-          - Jun 21, 2022
-        </li>
-        <li>
-          <Anchor href="https://github.com/sylvhama/pwa-links">
-            Progressive Web Apps links
-          </Anchor>{" "}
-          - Jun 17, 2020
-        </li>
-        <li>
-          <Anchor href="https://dev.to/sylvhama/multi-directional-navigation-31k2">
-            Multi Directional Navigation
-          </Anchor>{" "}
-          - Jun 8, 2020
-        </li>
-        <li>
-          <Anchor href="https://github.com/sylvhama/modern-js">
-            Road to Modern JavaScript and React
-          </Anchor>{" "}
-          - Nov 8, 2017
         </li>
       </List>
     </Section>
