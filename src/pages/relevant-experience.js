@@ -9,7 +9,8 @@ import Anchor from '../components/shared/Anchor';
 import { VisuallyHidden } from '../components/shared/VisuallyHidden';
 import { Split } from '../components/shared/Split';
 
-const startDate = new Date(2013, 9, 1);
+// September 1st 2013 (0 = january)
+const startDate = new Date(2013, 8, 1);
 
 export default function Experience() {
   const today = new Date();
@@ -32,21 +33,23 @@ export default function Experience() {
         Jul 2022 - Present <span aria-hidden="true">🌐 📊</span>
       </SectionSubtitle>
       <Paragraph>
-        I am currently working for <strong>Meta</strong> as a senior front-end developer.
+        I am currently working for <strong>Meta</strong> as a senior front-end
+        developer.
       </Paragraph>
 
       <SectionSubtitle>
         Apr 2019 - Jun 2022 <span aria-hidden="true">🇨🇦 🛍️</span>
       </SectionSubtitle>
       <Paragraph>
-        I worked for <strong>Shopify</strong> in their Montreal office then remotely after COVID.
-        I contributed to merchant facing experiences (Shopify Admin, Polaris
-        design system) and buyer facing experiences (Customer Accounts) while
-        acting as an{' '}
-        <Anchor href="https://dev.to/sylvhama/how-to-test-your-web-app-accessibility-26di">accessibility advocate</Anchor>{' '}
-        within my team. I mentored
-        developers via code reviews and pair programming. I also championed
-        projects with multidisciplinary teams.
+        I worked for <strong>Shopify</strong> in their Montreal office then
+        remotely after COVID. I contributed to merchant facing experiences
+        (Shopify Admin, Polaris design system) and buyer facing experiences
+        (Customer Accounts) while acting as an{' '}
+        <Anchor href="https://dev.to/sylvhama/how-to-test-your-web-app-accessibility-26di">
+          accessibility advocate
+        </Anchor>{' '}
+        within my team. I mentored developers via code reviews and pair
+        programming. I also championed projects with multidisciplinary teams.
       </Paragraph>
 
       <SectionSubtitle>
