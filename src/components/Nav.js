@@ -9,6 +9,12 @@ const StyledLink = styled(Link)`
   color: var(--text-color);
   transition: color 0.2s ease-out;
 
+  @media (prefers-reduced-motion: no-preference) {
+    :focus-visible {
+      transition: color 0.2s ease-out, outline-offset 150ms ease-out;
+    }
+  }
+
   &:before,
   &:after {
     content: '';
@@ -40,12 +46,10 @@ const StyledLink = styled(Link)`
   &:hover,
   &:focus {
     color: ${(props) => props.theme.color.lightBlue};
-    transition: color 0.2s ease-out;
   }
 
   &.active {
     color: ${(props) => props.theme.color.blue};
-    transition: color 0.2s ease-out;
 
     &:before,
     &:after {

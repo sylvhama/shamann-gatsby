@@ -10,14 +10,11 @@ import { useSiteMetaData } from '../hooks';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --text-color: ${props => props.theme.modeColors.text};
-    --background-color:  ${props => props.theme.modeColors.background};
+    --text-color: ${(props) => props.theme.modeColors.text};
+    --background-color:  ${(props) => props.theme.modeColors.background};
   }
   * {
     box-sizing: border-box;
-  }
-  *:focus {
-    outline-color: ${props => props.theme.color.blue};
   }
   body {
     position: relative;
@@ -29,12 +26,23 @@ const GlobalStyle = createGlobalStyle`
     color: var(--text-color);
     transition: color 0.2s ease-out, background 0.2s ease-out;
   }
+
+  :focus-visible {
+    outline: 2px solid ${(props) => props.theme.color.blue};
+    outline-offset: 0.25rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :focus-visible {
+      transition: outline-offset 150ms ease-out;
+    }
+  }
 `;
 
 const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
-  max-width: ${props => props.theme.breakpoint};
+  max-width: ${(props) => props.theme.breakpoint};
 `;
 
 const Hr = styled.hr`

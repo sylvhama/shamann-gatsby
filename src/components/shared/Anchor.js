@@ -9,17 +9,17 @@ export default styled.a`
     text-decoration: underline;
   }
 
-  @media (prefers-reduced-motion) {
+  @media (prefers-reduced-motion: no-preference) {
     &:focus-visible {
       transition: outline-offset 75ms ease-out;
     }
 
-    &:not:active:focus-visible {
-      transition-duration: 25ms;
+    &:not(:active):focus-visible {
+      transition-duration: 150ms;
     }
   }
 
-  &:not:active:focus-visible {
-    outline-offset: 0.5rem;
+  &:not(:active):focus-visible {
+    outline-offset: 0.25rem;
   }
 `;
