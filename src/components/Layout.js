@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  *:focus {
+    outline-color: ${props => props.theme.color.blue};
+  }
   body {
     position: relative;
     margin: 0;

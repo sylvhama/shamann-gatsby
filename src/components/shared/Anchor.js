@@ -8,4 +8,18 @@ export default styled.a`
   &:hover {
     text-decoration: underline;
   }
+
+  @media (prefers-reduced-motion) {
+    &:focus-visible {
+      transition: outline-offset 75ms ease-out;
+    }
+
+    &:not:active:focus-visible {
+      transition-duration: 25ms;
+    }
+  }
+
+  &:not:active:focus-visible {
+    outline-offset: 0.5rem;
+  }
 `;
