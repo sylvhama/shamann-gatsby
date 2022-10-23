@@ -26,7 +26,7 @@ export default function Experience() {
       <Paragraph aria-hidden>{firstPart}</Paragraph>
       <Split text={secondPart.slice(0, -1)} />
       <VisuallyHidden>
-        {firstPart} {secondPart}
+        {firstPart}{' '}{secondPart}
       </VisuallyHidden>
 
       <SectionSubtitle>
