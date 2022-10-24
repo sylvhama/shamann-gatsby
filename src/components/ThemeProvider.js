@@ -10,7 +10,7 @@ const isWindowDefined = typeof window !== 'undefined';
 const metaThemeColor =
   isWindowDefined && window.document.querySelector('meta[name=theme-color]');
 const loadedMode = isWindowDefined ? window.getThemeMode() : 'dark';
-const root = document.documentElement;
+const root = isWindowDefined && document.documentElement;
 
 export default function MyThemeProvider({ children }) {
   const [isDark, setIsDark] = useState(loadedMode === 'dark');
