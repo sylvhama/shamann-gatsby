@@ -11,7 +11,7 @@ function Section({ title, children, ...seo }) {
     <section aria-labelledby={ID}>
       <Seo title={title} {...seo} />
       <VisuallyHidden>
-        <h1 id={ID}>{title}</h1>
+        <h2 id={ID}>{title}</h2>
       </VisuallyHidden>
       {children}
     </section>
