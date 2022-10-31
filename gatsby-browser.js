@@ -1,5 +1,4 @@
-export { wrapRootElement } from './src/components/wrapRootElement';
-export { wrapPageElement } from './src/components/wrapPageElement';
+export { wrapRootElement, wrapPageElement } from 'wrappers';
 
 export const onServiceWorkerUpdateFound = () =>
   console.log('The application will be updated after next reload.');

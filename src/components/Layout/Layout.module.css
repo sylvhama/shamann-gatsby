@@ -1,0 +1,16 @@
+.Wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 640px;
+}
+
+.Hr {
+  margin: 1.25rem auto 2rem;
+  border: 0;
+  height: 1px;
+  width: 50%;
+  display: block;
+  background-color: currentColor;
+  opacity: 0.5;
+  transition: background-color ease 0.5sec;
+}

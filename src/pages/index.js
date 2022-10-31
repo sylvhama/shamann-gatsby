@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Section from '../components/Section';
-import Paragraph from '../components/shared/Paragraph';
+import { Section } from 'components/Section';
+import { Paragraph } from 'components/shared/Paragraph';
 
 export default function Index() {
   return (

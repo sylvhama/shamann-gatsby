@@ -1,6 +1,6 @@
 import React from 'react';
-import { wrapRootElement as exportMeAsWrapRootElement } from './src/components/wrapRootElement';
-export { wrapPageElement } from './src/components/wrapPageElement';
+import { wrapRootElement as exportMeAsWrapRootElement } from 'wrappers';
+export { wrapPageElement } from 'wrappers';
 
 // The build is failing if we directly export like we do with wrapPageElement
 export const wrapRootElement = exportMeAsWrapRootElement;

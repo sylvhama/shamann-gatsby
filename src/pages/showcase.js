@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Section from '../components/Section';
-import SectionSubtitle from '../components/shared/SectionSubtitle';
-import Paragraph from '../components/shared/Paragraph';
-import Anchor from '../components/shared/Anchor';
+import { Section } from 'components/Section';
+import { SectionSubtitle } from 'components/shared/SectionSubtitle';
+import { Paragraph } from 'components/shared/Paragraph';
+import { Anchor } from 'components/shared/Anchor';
 
 export default function Showcase() {
   return (

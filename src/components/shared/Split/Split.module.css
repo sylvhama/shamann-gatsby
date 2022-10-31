@@ -1,0 +1,71 @@
+.Text {
+  padding-bottom: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Text.Invisible {
+  opacity: 0;
+}
+
+@media (max-width: 640px) {
+  .Text {
+    font-size: 1.25rem;
+  }
+}
+
+.Char {
+  display: inline-block;
+  white-space: break-spaces;
+}
+
+.Char.Sliding {
+  animation: slidein 1s cubic-bezier(0.5, 0, 0.5, 1) both;
+  animation-delay: calc(var(--index) * 60ms);
+}
+
+.Char.Rainbow {
+  animation: rainbow 2s linear infinite, floating 1s ease-in-out infinite;
+  animation-delay: calc(var(--index) * 60ms);
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(2rem);
+    opacity: 0;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: hsl(0turn, 90%, 65%);
+  }
+  25% {
+    color: hsl(0.25turn, 90%, 65%);
+  }
+  50% {
+    color: hsl(0.5turn, 90%, 65%);
+  }
+  75% {
+    color: hsl(0.75turn, 90%, 65%);
+  }
+  100% {
+    color: hsl(1turn, 90%, 65%);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

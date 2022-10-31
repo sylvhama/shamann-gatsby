@@ -27,7 +27,19 @@ module.exports = {
         icon: 'src/images/shamann-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          src: 'src',
+          components: 'src/components',
+          contexts: 'src/contexts',
+          hooks: 'src/hooks',
+          wrappers: 'src/wrappers',
+        },
+        extensions: ['js'],
+      },
+    },
     'gatsby-plugin-remove-serviceworker',
   ],
 };

@@ -1,0 +1,22 @@
+.Anchor {
+  font-family: var(--font-mono);
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.Anchor:hover {
+  text-decoration: underline;
+}
+
+.Anchor:not(:active):focus-visible {
+  outline-offset: 0.25rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Anchor:focus-visible {
+    transition: outline-offset 75ms ease-out;
+  }
+  .Anchor:not(:active):focus-visible {
+    transition-duration: 150ms;
+  }
+}
