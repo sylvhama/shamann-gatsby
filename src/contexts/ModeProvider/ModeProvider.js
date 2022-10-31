@@ -19,6 +19,8 @@ export function ModeProvider({ children }) {
       metaThemeColor.setAttribute('content', colors[nextMode].background);
       root.style.setProperty('--text-color', colors[nextMode].text);
       root.style.setProperty('--background-color', colors[nextMode].background);
+      root.style.setProperty('--link-color', colors[nextMode].link);
+      root.style.setProperty('--link-color-hover', colors[nextMode].linkHover);
     }
   }, [isDark]);
   return (

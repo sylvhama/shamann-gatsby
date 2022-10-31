@@ -15,19 +15,31 @@ const ThemeScript = () => {
       return 'light';
     return 'dark';
   }
-
   window.THEME_COLORS = {
-    dark: { background: '#212121', text: '#f1f1f1' },
-    light: { background: '#f1f1f1', text: '#212121' },
+    dark: {
+      background: '#212121',
+      text: '#f1f1f1',
+      link: '#03a9f4',
+      linkHover: '#b3e5fc',
+    },
+    light: {
+      background: '#f1f1f1',
+      text: '#212121',
+      link: '#0274a7',
+      linkHover: '#58707c',
+    },
   };
-
-  (function() {
+  
+  (function () {
     const mode = getThemeMode();
     const colors = window.THEME_COLORS;
     const root = document.documentElement;
     root.style.setProperty('--text-color', colors[mode].text);
     root.style.setProperty('--background-color', colors[mode].background);
-  })()`;
+    root.style.setProperty('--link-color', colors[mode].link);
+    root.style.setProperty('--link-color-hover', colors[mode].linkHover);
+  })();
+  `;
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
 };
 
