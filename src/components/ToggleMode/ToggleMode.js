@@ -4,24 +4,24 @@ import { useMode } from 'hooks/useMode';
 
 import './global.css';
 
-const Sun = () => (
+const Melt = () => (
   <span
     style={{ right: '0.025rem' }}
     className="icon"
     role="img"
-    aria-label="Sun emoji representing light mode"
+    aria-label="Melting Face emoji representing light mode"
   >
-    🌞
+    🫠
   </span>
 );
 
-const Moon = () => (
+const Vampire = () => (
   <span
     className="icon"
     role="img"
-    aria-label="Moon emoji representing dark mode"
+    aria-label="Vampire emoji representing dark mode"
   >
-    🌜
+    🧛
   </span>
 );
 
@@ -39,8 +39,8 @@ export function ToggleMode() {
         checked={isDark}
         onChange={() => setIsDark(!isDark)}
         icons={{
-          checked: <Moon />,
-          unchecked: <Sun />,
+          checked: <Vampire />,
+          unchecked: <Melt />,
         }}
       />
     </aside>

@@ -17,16 +17,16 @@ const ThemeScript = () => {
   }
   window.THEME_COLORS = {
     dark: {
-      background: '#212121',
-      text: '#f1f1f1',
-      link: '#03a9f4',
-      linkHover: '#b3e5fc',
+      background: '#1d1e26',
+      text: '#f8f8f2',
+      link: '#80ffea',
+      linkHover: '#9580ff',
     },
     light: {
-      background: '#f1f1f1',
-      text: '#212121',
-      link: '#0274a7',
-      linkHover: '#58707c',
+      background: '#f8f8f2',
+      text: '#1d1e26',
+      link: '#9580ff',
+      linkHover: '#ff80bf',
     },
   };
   
