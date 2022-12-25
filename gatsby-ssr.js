@@ -20,12 +20,12 @@ const ThemeScript = () => {
       background: '#1d1e26',
       text: '#f8f8f2',
       link: '#80ffea',
-      linkHover: '#9580ff',
+      linkHover: '#ff80bf',
     },
     light: {
-      background: '#f8f8f2',
+      background: '#ffffff',
       text: '#1d1e26',
-      link: '#9580ff',
+      link: '#7357ff',
       linkHover: '#ff80bf',
     },
   };

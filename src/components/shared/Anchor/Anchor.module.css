@@ -6,6 +6,7 @@
 
 .Anchor:hover {
   text-decoration: underline;
+  color: var(--link-color-hover);
 }
 
 .Anchor:not(:active):focus-visible {
