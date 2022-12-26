@@ -7,17 +7,26 @@ export function Nav({ links, ...rest }) {
   return (
     <nav {...rest} aria-label="Main navigation">
       <ul className={styles.List}>
-        {links.map((link) => (
-          <li key={link.name} className={styles.Item}>
-            <Link
-              className={styles.Link}
-              to={link.path}
-              activeClassName="active"
-            >
-              {link.name}
-            </Link>
-          </li>
-        ))}
+        {links.map(({ name, path }) => {
+          const split = name.split(' ');
+          return (
+            <li key={name} className={styles.Item}>
+              <Link className={styles.Link} to={path} activeClassName="active">
+                {split.map((word, index) => {
+                  if (split.length === 1 || split.length - 1 === index) {
+                    return word;
+                  }
+                  return (
+                    <React.Fragment key={word}>
+                      {word}
+                      <span style={{ fontFamily: 'arial' }}> </span>
+                    </React.Fragment>
+                  );
+                })}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

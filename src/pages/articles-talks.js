@@ -9,7 +9,7 @@ import { Paragraph } from 'components/shared/Paragraph';
 
 export default function Talks() {
   return (
-    <Section title="Talks & Open Source">
+    <Section title="Articles & Talks">
       <div className="float-left">
         <StaticImage
           src="../images/shamann-speaker.jpg"

@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/talks-open-source"
+  to = "/articles-talks"
+  status = 301
+  force = true
