@@ -1,23 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import { Section } from 'components/Section';
-import { Paragraph } from 'components/shared/Paragraph';
+import { Section } from "components/Section";
+import { Paragraph } from "components/shared/Paragraph";
 
 export default function Index() {
   return (
-    <Section title="About Me" keywords={['react', 'javascript', 'web']}>
+    <Section title="About Me" keywords={["react", "javascript", "web"]}>
       <Paragraph>
         I’m a French citizen and a permanent resident of Canada working remotely
-        in Montreal. I{' '}
+        in Montreal. I{" "}
         <span role="img" aria-label="love">
           💖
-        </span>{' '}
-        crafting stuff in the Web. If I had to list my favorite tools and
-        libraries in no particular order it would be: React, React Testing
-        Library, TypeScript, Styled Components and GraphQL (I still love the{' '}
-        <abbr title="Backends for Frontends">BFF</abbr> pattern). The{' '}
-        <abbr title="Keep it Simple, Stupid">KISS</abbr> principle is my mojo. I
-        also try my best to act as an accessibility advocate.
+        </span>{" "}
+        crafting accessible and performant Web{" "}
+        <abbr title="User Interfaces">UI</abbr>. I mainly work with{" "}
+        <em>React</em>. The <abbr title="Keep it Simple, Stupid">KISS</abbr>{" "}
+        principle is my mojo.
       </Paragraph>
     </Section>
   );
