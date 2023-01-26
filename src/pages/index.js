@@ -13,7 +13,7 @@ export default function Index() {
           💖
         </span>{" "}
         crafting accessible and performant Web{" "}
-        <abbr title="User Interfaces">UI</abbr>. I mainly work with{" "}
+        <abbr title="User Interfaces">UIs</abbr>. I mainly work with{" "}
         <em>React</em>. The <abbr title="Keep it Simple, Stupid">KISS</abbr>{" "}
         principle is my mojo.
       </Paragraph>
