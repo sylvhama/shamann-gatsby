@@ -7,16 +7,12 @@ export default function Index() {
   return (
     <Section title="About Me" keywords={["react", "javascript", "web"]}>
       <Paragraph>
-        I’m a French citizen and a permanent resident of Canada working remotely
-        in Montreal. I{" "}
+        I’m a French expat working remotely in Montreal. I{" "}
         <span role="img" aria-label="love">
           💖
         </span>{" "}
-        crafting accessible and performant Web{" "}
-        <abbr title="User Interfaces">UIs</abbr>. I mainly work with{" "}
-        <em>React</em>. The <abbr title="Keep it Simple, Stupid">KISS</abbr>{" "}
-        principle is my mojo.
+        crafting accessible and performant UX with <em>React</em>.
       </Paragraph>
     </Section>
-  );
+  ); 
 }
