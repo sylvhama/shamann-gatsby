@@ -33,7 +33,7 @@ export default function Talks() {
         <Anchor href="https://www.youtube.com/playlist?list=PL3jMq0AMfCCeiXYJFp0HNLCR5uMZsMPs7">
           videos in French
         </Anchor>{' '}
-        about my experience as a web developer.
+        about my experience as a front-end developer.
       </Paragraph>
 
       <SectionSubtitle>My articles</SectionSubtitle>
