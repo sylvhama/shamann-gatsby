@@ -17,8 +17,8 @@ export function Header({ title, description, ...rest }) {
         layout="fixed"
         alt="Sylvain Hamann's portrait"
         quality={100}
-        width={100}
-        height={100}
+        width={size}
+        height={size}
       />
       <div>
         <Title>{title}</Title>
