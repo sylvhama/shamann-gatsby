@@ -19,7 +19,7 @@ export function Nav({ links, ...rest }) {
                   return (
                     <React.Fragment key={word}>
                       {word}
-                      <span style={{ fontFamily: 'arial' }}> </span>
+                      <span style={{ fontFamily: 'arial', fontSize: '0.88em' }}> </span>
                     </React.Fragment>
                   );
                 })}
