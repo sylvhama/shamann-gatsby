@@ -6,8 +6,6 @@ import { Title } from 'components/shared/Title';
 import { Subtitle } from 'components/shared/Subtitle';
 import * as styles from './Header.module.css';
 
-const size = '6.25rem'
-
 export function Header({ title, description, ...rest }) {
   return (
     <header className={styles.Header} {...rest}>
@@ -17,8 +15,8 @@ export function Header({ title, description, ...rest }) {
         layout="fixed"
         alt="Sylvain Hamann's portrait"
         quality={100}
-        width={size}
-        height={size}
+        width={100}
+        height={100}
       />
       <div>
         <Title>{title}</Title>
