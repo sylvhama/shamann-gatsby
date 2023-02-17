@@ -66,6 +66,7 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 
@@ -77,6 +78,7 @@
 }
 
 .Item {
+  line-height: 1;
   font-size: 1.2rem;
   font-family: var(--font-mono);
   text-transform: uppercase;
