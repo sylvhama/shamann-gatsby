@@ -3,8 +3,8 @@
 
   display: inline-block;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 16px;
+  right: 16px;
   cursor: pointer;
   background-color: transparent;
   border: 0;
@@ -115,10 +115,10 @@
 .react-toggle .icon {
   position: absolute;
   top: 50%;
-  margin-top: -0.5rem;
-  width: 1rem;
-  height: 1rem;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
   text-align: center;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 16px;
 }
