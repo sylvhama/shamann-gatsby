@@ -1,6 +1,3 @@
-:global {
-}
-
 .Link {
   position: relative;
   text-decoration: none;
@@ -65,14 +62,14 @@
   margin: 0 auto;
   padding: 4rem 1rem;
   width: 100%;
-  max-width: 640px;
+  max-width: var(--max-width);
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
   list-style: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .List {
     padding: 2rem 0;
     display: block;
@@ -91,7 +88,7 @@
   padding-right: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .Item {
     padding: 1rem 0;
   }

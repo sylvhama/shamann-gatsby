@@ -10,7 +10,7 @@
   opacity: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .Text {
     font-size: 1.25rem;
   }

@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .Header {
     padding-top: 2rem;
     flex-direction: column;
@@ -17,7 +17,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .Header img {
     margin-bottom: 1rem;
   }

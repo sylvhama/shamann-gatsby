@@ -1,5 +1,6 @@
 :root {
   --font-mono: 'Lucida Console', Courier, monospace;
+  --max-width: 40rem;
 }
 
 * {
@@ -33,7 +34,7 @@ body {
   margin-right: 1rem;
   float: left;
 }
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .float-left {
     margin: 0 auto 1rem;
     display: flex;
