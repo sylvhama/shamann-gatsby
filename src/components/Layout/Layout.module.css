@@ -12,5 +12,5 @@
   display: block;
   background-color: currentColor;
   opacity: 0.5;
-  transition: background-color ease 0.5sec;
+  transition: background-color ease 0.5s;
 }
