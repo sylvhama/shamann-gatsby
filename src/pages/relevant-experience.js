@@ -37,16 +37,17 @@ export default function Experience() {
         each card, I created dashboards and alerts in order to monitor their
         health and performance. I fixed different types of issues (responsive,{" "}
         <abbr title="internationalization">i18n</abbr>,{" "}
-        <abbr title="accessibility">a11y</abbr>...) in the Commerce Insights
-        platform. I also helped to improve the test coverage by implementing new
-        testing utilities and several <abbr title="end to end">e2e</abbr> tests.
+        <abbr title="accessibility">a11y</abbr>...) in the Commerce Manager and
+        Ads Manager platforms. I also helped improving the test coverage by
+        sharing testing best practices and implementing new{" "}
+        <abbr title="end to end">e2e</abbr> tests.
       </Paragraph>
 
       <SectionSubtitle>
         Apr 2019 - Jun 2022 <span aria-hidden="true">🇨🇦 🛍️</span>
       </SectionSubtitle>
       <Paragraph>
-        I worked for <strong>Shopify</strong> in their Montreal office then
+        I worked at <strong>Shopify</strong> in their Montreal office then
         remotely after COVID. I contributed to merchant facing experiences
         (Shopify Admin, Polaris design system) and buyer facing experiences
         (Customer Accounts) while acting as an{" "}
