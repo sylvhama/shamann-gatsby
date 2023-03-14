@@ -28,10 +28,10 @@ export default function Experience() {
       <VisuallyHidden>{`${firstPart} ${secondPart}`}</VisuallyHidden>
 
       <SectionSubtitle>
-        Jul 2022 - Present <span aria-hidden="true">🌐 📊</span>
+        Jul 2022 - Mar 2023 <span aria-hidden="true">🌐 📊</span>
       </SectionSubtitle>
       <Paragraph>
-        I'm working at <strong>Meta</strong> as a senior front-end developer on
+        I worked at <strong>Meta</strong> as a senior front-end developer on
         the Commerce Insights team. I contributed to the Facebook & Instagram
         app on Shopify, we built three new cards showing different insights. For
         each card, I created dashboards and alerts in order to monitor their
