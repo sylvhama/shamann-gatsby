@@ -39,6 +39,12 @@ export default function Talks() {
       <SectionSubtitle>My articles</SectionSubtitle>
       <List>
         <li>
+          <Anchor href="https://dev.to/sylvhama/gpt-is-my-new-bff-backend-for-frontends-1g03">
+            GPT is my new BFF (Backend for Frontends)
+          </Anchor>{" "}
+          - Mar 28, 2023
+        </li>
+        <li>
           <Anchor href="https://dev.to/sylvhama/use-css-to-pass-an-element-through-your-letters-2ad3">
             Use CSS to pass an element through your letters
           </Anchor>{" "}
