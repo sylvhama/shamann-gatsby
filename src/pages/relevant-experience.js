@@ -31,11 +31,11 @@ export default function Experience() {
         Jul 2022 - Mar 2023 <span aria-hidden="true">🌐 📊</span>
       </SectionSubtitle>
       <Paragraph>
-        I worked at <strong>Meta</strong> as a senior front-end developer on
-        the Commerce Insights team. I contributed to the Facebook & Instagram
-        app on Shopify, we built three new cards showing different insights. For
-        each card, I created dashboards and alerts in order to monitor their
-        health and performance. I fixed different types of issues (responsive,{" "}
+        I worked at <strong>Meta</strong> as a senior front-end developer on the
+        Commerce Insights team. I contributed to the Facebook & Instagram app on
+        Shopify, we built three new cards showing different insights. For each
+        card, I created dashboards and alerts in order to monitor their health
+        and performance. I fixed different types of issues (responsiveness,{" "}
         <abbr title="internationalization">i18n</abbr>,{" "}
         <abbr title="accessibility">a11y</abbr>...) in the Commerce Manager and
         Ads Manager platforms. I also helped improving the test coverage by
