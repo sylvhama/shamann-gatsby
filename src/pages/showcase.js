@@ -59,7 +59,7 @@ export default function Showcase() {
         </Anchor>{' '}
         and <em>Service Worker</em> did not exist yet. But I still was able to
         develop an offline first web app via the <em>appCache API</em>. Here are{' '}
-        <Anchor href="https://www.behance.net/gallery/44236015/HSK-First-Thursdays-afterwork-party-%282014%29">
+        <Anchor href="https://sylvhama.notion.site/sylvhama/My-Portfolio-5e616652b45249b0ae69dda6b23d73e3?p=a3affc20c05847e4b99f007f4bce51df&pm=c">
           some pictures
         </Anchor>{' '}
         taken at one of the events.

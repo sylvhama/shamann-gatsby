@@ -24,7 +24,7 @@ export function Footer() {
           </li>
           <li>
             Browse my portfolio on{' '}
-            <Anchor href="https://www.behance.net/sylvhama/">Behance</Anchor>.
+            <Anchor href="https://sylvhama.notion.site/sylvhama/My-Portfolio-5e616652b45249b0ae69dda6b23d73e3">Notion</Anchor>.
           </li>
           <li>
             See some of my code on{' '}
