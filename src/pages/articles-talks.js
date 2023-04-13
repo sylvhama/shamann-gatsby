@@ -29,11 +29,11 @@ export default function Talks() {
       >
         I have talked at several meetups in Seoul, Tokyo and Montreal. I also
         have co-organized public and internal meetups at Ubisoft Montreal and
-        Shopify. I sometimes record{" "}
+        Shopify. I occasionally create{" "}
         <Anchor href="https://www.youtube.com/playlist?list=PL3jMq0AMfCCeiXYJFp0HNLCR5uMZsMPs7">
           videos in French
         </Anchor>{" "}
-        about my experience as a front-end developer.
+        where I share my experiences as a front-end developer.
       </Paragraph>
 
       <SectionSubtitle>My articles</SectionSubtitle>
