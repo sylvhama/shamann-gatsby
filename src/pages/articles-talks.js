@@ -79,6 +79,12 @@ export default function Talks() {
       <SectionSubtitle>My talks</SectionSubtitle>
       <List>
         <li>
+          <Anchor href="https://howtotestyourwebappa11y.netlify.app/1">
+            How to test your web app a11y?
+          </Anchor>{" "}
+          - React & React Native MTL Meetup at Busbud - May 10, 2023
+        </li>
+        <li>
           <Anchor href="https://github.com/sylvhama/intro-to-styled-components">
             Introduction to Styled Components
           </Anchor>{" "}
