@@ -25,7 +25,15 @@ export default function Experience() {
     <Section title="Relevant experience">
       <Paragraph aria-hidden>{firstPart}</Paragraph>
       <Split text={secondPart.slice(0, -1)} />
-      <VisuallyHidden>{`${firstPart} ${secondPart}`}</VisuallyHidden>
+      <VisuallyHidden>{firstPart} {secondPart}</VisuallyHidden>
+
+      <SectionSubtitle>
+        Apr 2023 - Present <span aria-hidden="true">🐇 ✈️</span>
+      </SectionSubtitle>
+      <Paragraph>
+        I wam working at <strong>Hopper</strong> as a senior front-end developer
+        on the Corporate Travel team.
+      </Paragraph>
 
       <SectionSubtitle>
         Jul 2022 - Mar 2023 <span aria-hidden="true">🌐 📊</span>
