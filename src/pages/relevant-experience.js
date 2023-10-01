@@ -38,11 +38,11 @@ export default function Experience() {
         team and played a significant part in various frontend projects within
         two multi-tenant monorepos powered by Turbo and Nx. This included
         contributing to the development of the admin portal using Next.js,
-        TypeScript, MUI, and react-query, as well as the booking portal for
-        flights and hotels, built with Vite, React, TypeScript, MUI, and redux.
-        Additionally, I was involved in creating an authentication flow that
-        supported both of these portals, along with a marketing website made
-        with Webflow.
+        TypeScript, MUI, react-query, Playwright and MSW; as well as the booking
+        portal for flights and hotels, built with Vite, React, TypeScript, MUI,
+        and redux. Additionally, I was involved in creating an authentication
+        flow that supported both of these portals, along with a marketing
+        website made with Webflow.
       </Paragraph>
 
       <SectionSubtitle>
