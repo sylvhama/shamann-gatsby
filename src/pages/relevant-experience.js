@@ -35,8 +35,8 @@ export default function Experience() {
       <Paragraph>
         I joined the{" "}
         <Anchor href="https://business.hopper.com">Hopper for Business</Anchor>{" "}
-        team and played a crucial role in various projects within two
-        multi-tenant monorepos powered by Turbo and Nx. This included
+        team and played a significant part in various frontend projects within
+        two multi-tenant monorepos powered by Turbo and Nx. This included
         contributing to the development of the admin portal using Next.js,
         TypeScript, MUI, and react-query, as well as the booking portal for
         flights and hotels, built with Vite, React, TypeScript, MUI, and redux.
