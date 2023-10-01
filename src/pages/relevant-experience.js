@@ -25,14 +25,24 @@ export default function Experience() {
     <Section title="Relevant experience">
       <Paragraph aria-hidden>{firstPart}</Paragraph>
       <Split text={secondPart.slice(0, -1)} />
-      <VisuallyHidden>{firstPart} {secondPart}</VisuallyHidden>
+      <VisuallyHidden>
+        {firstPart} {secondPart}
+      </VisuallyHidden>
 
       <SectionSubtitle>
         Apr 2023 - Present <span aria-hidden="true">🐇 ✈️</span>
       </SectionSubtitle>
       <Paragraph>
-        I wam working at <strong>Hopper</strong> as a senior front-end developer
-        on the Corporate Travel team.
+        I joined the{" "}
+        <Anchor href="https://business.hopper.com">Hopper for Business</Anchor>{" "}
+        team and played a crucial role in various projects within two
+        multi-tenant monorepos powered by Turbo and Nx. This included
+        contributing to the development of the admin portal using Next.js,
+        TypeScript, MUI, and react-query, as well as the booking portal for
+        flights and hotels, built with Vite, React, TypeScript, MUI, and redux.
+        Additionally, I was involved in creating an authentication flow that
+        supported both of these portals, along with a marketing website made
+        with Webflow.
       </Paragraph>
 
       <SectionSubtitle>
