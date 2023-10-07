@@ -34,16 +34,15 @@ export default function Experience() {
       </SectionSubtitle>
       <Paragraph>
         I joined the <strong>Hopper for Business</strong> team as a senior
-        front-end developer and played a significant part in various frontend
-        projects within two multi-tenant monorepos powered by Turbo and Nx. This
-        included contributing to the development of the admin portal using
-        Next.js, TypeScript, MUI, react-query, Playwright and MSW; as well as
-        the booking portal for flights and hotels, built with Vite, React,
-        TypeScript, MUI, and redux. Additionally, I was involved in creating an
-        authentication flow that supported both of these portals, along with a
-        marketing website made with Webflow. Despite successfully launching each
-        project within just six months, I was unfortunately part of a major
-        layoff at Hopper.
+        front-end developer and played a significant part in various projects
+        within two multi-tenant monorepos powered by Turbo and Nx and using
+        frameworks such as Next.js, Vite, MUI and Playwright. This included
+        contributing to the development of the admin portal as well as the
+        booking portal for flights and hotels. Additionally, I was involved in
+        creating an authentication flow that supported both of these portals,
+        along with a marketing website made with Webflow. Despite successfully
+        launching each project within just six months, I was unfortunately part
+        of a major layoff at Hopper.
       </Paragraph>
 
       <SectionSubtitle>
