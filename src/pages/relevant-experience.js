@@ -42,7 +42,7 @@ export default function Experience() {
         creating an authentication flow that supported both of these portals,
         along with a marketing website made with Webflow. Despite successfully
         launching each project within just six months, I was unfortunately part
-        of a major layoff at Hopper.
+        of a major layoff.
       </Paragraph>
 
       <SectionSubtitle>
