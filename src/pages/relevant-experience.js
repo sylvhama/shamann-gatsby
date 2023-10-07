@@ -36,7 +36,7 @@ export default function Experience() {
         I joined the <strong>Hopper for Business</strong> team as a senior
         front-end developer and played a significant part in various projects
         within two multi-tenant monorepos powered by Turbo and Nx and using
-        frameworks such as Next.js, Vite, MUI and Playwright. This included
+        frameworks such as Next.js, Vite, MUI, Playwright and MSW. This included
         contributing to the development of the admin portal as well as the
         booking portal for flights and hotels. Additionally, I was involved in
         creating an authentication flow that supported both of these portals,
