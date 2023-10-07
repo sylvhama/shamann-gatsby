@@ -30,7 +30,7 @@ export default function Experience() {
       </VisuallyHidden>
 
       <SectionSubtitle>
-        Apr 2023 - Present <span aria-hidden="true">🐇 ✈️</span>
+        Apr 2023 - Oct 2023 <span aria-hidden="true">🐇 ✈️</span>
       </SectionSubtitle>
       <Paragraph>
         I joined the Hopper for Business team and played a significant part in
