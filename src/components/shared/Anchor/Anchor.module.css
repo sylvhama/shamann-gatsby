@@ -1,11 +1,10 @@
 .Anchor {
   font-family: var(--font-mono);
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .Anchor:hover {
-  text-decoration: underline;
   color: var(--link-color-hover);
 }
 
