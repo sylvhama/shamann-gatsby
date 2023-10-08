@@ -1,8 +1,6 @@
-Proudly powered by [Gatsby](https://www.gatsbyjs.org/) 🚀
+Made with [Gatsby](https://www.gatsbyjs.org/) and CSS Modules; deployed via [Netlify](https://www.netlify.com/); apps I used to edit and compress images: [squoosh.app](https://squoosh.app) and [remove.bg](https://www.remove.bg/).
 
-With the help of those awesome apps to edit and compress images: [squoosh.app](https://squoosh.app) and [remove.bg](https://www.remove.bg/) 🖼️
-
-Deployed via [Netlify](https://www.netlify.com/) 🌐
+French version built with Astro and Tailwind: https://github.com/sylvhama/shamann-fr
 
 Inspiration 💡:
 
