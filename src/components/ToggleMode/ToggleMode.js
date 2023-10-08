@@ -60,14 +60,16 @@ function useFrenchUrl() {
   const base = 'https://shamann.fr';
   let pathname = '';
 
+  console.log({ currentPathname });
+
   switch (currentPathname) {
-    case '/relevant-experience':
+    case '/relevant-experience/':
       pathname = '/parcours';
       break;
-    case '/showcase':
+    case '/showcase/':
       pathname = '/vitrine';
       break;
-    case '/articles-talks':
+    case '/articles-talks/':
       pathname = '/articles-presentations';
       break;
     default:
