@@ -1,7 +1,9 @@
 import React from 'react';
 import Toggle from 'react-toggle';
 import { useMode } from 'hooks/useMode';
+import { Anchor } from 'components/shared/Anchor';
 
+import * as styles from './ToggleMode.module.css';
 import './global.css';
 
 const Melt = () => (
@@ -31,7 +33,8 @@ export function ToggleMode() {
   if (typeof window === 'undefined') return null;
 
   return (
-    <aside aria-label="Choose between dark and light mode">
+    <aside className={styles.Aside} aria-label="Change mode or language">
+      <Anchor href="https://shamann.fr">Français</Anchor>
       <Toggle
         aria-label={`Switch from ${isDark ? 'dark' : 'light'} mode to ${
           isDark ? 'light' : 'dark'
