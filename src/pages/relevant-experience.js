@@ -18,7 +18,7 @@ export default function Experience() {
   const years = differenceInYears(today, startDate);
   const months = differenceInMonths(today, startDate) - years * 12;
 
-  const firstPart = "I've been working full time in web development for";
+  const firstPart = "I've been working in the Web for";
   const secondPart = `${years} years${createSentenceEnd(months)}`;
 
   return (
