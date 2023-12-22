@@ -40,9 +40,11 @@ export default function Experience() {
         contributing to the development of the admin portal as well as the
         booking portal for flights and hotels. Additionally, I was involved in
         creating an authentication flow that supported both of these portals,
-        along with a marketing website made with Webflow. Despite successfully
-        launching each project within just six months, I was unfortunately part
-        of a major layoff.
+        along with a marketing website made with Webflow.
+      </Paragraph>
+      <Paragraph small>
+        Despite successfully launching each project within just six months, I
+        was unfortunately part of a major layoff.
       </Paragraph>
 
       <SectionSubtitle>
@@ -60,6 +62,11 @@ export default function Experience() {
         sharing testing best practices and implementing new{' '}
         <abbr title="end to end">e2e</abbr> tests.
       </Paragraph>
+      <Paragraph small>
+        I received a positive review from my manager; however, I decided to
+        leave Meta because I didn't resonate with their remote culture and the
+        tasks assigned to me.
+      </Paragraph>
 
       <SectionSubtitle>
         Apr 2019 - Jun 2022 <span aria-hidden="true">🇨🇦 🛍️</span>
@@ -75,6 +82,10 @@ export default function Experience() {
         within my team. I mentored developers via code reviews and pair
         programming. I also championed projects with multidisciplinary teams.
       </Paragraph>
+      <Paragraph small>
+        I really enjoyed working at Shopify, but I decided to try new things
+        after receiving my Permanent Residency.
+      </Paragraph>
 
       <SectionSubtitle>
         Jul 2017 - Apr 2019 <span aria-hidden="true">🇨🇦 🎮</span>
@@ -87,6 +98,9 @@ export default function Experience() {
         Progressive Web App used to easily develop internal tools. Plus I have
         worked on web views that summarize your Club progression visible from
         the main menu of Assassin's Creed Origins and Odyssey.
+      </Paragraph>
+      <Paragraph small>
+        I left Ubisoft in order to join a company that would be Web focused.
       </Paragraph>
 
       <SectionSubtitle>
