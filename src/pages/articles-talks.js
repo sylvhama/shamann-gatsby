@@ -79,6 +79,10 @@ export default function Talks() {
       <SectionSubtitle>My talks</SectionSubtitle>
       <List>
         <li>
+          Introduction to Remotion - React & React Native MTL Meetup at ACENSI -
+          Dec 13, 2023
+        </li>
+        <li>
           <Anchor href="https://howtotestyourwebappa11y.netlify.app/1">
             How to test your web app a11y?
           </Anchor>{' '}
