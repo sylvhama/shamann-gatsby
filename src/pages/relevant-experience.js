@@ -64,8 +64,7 @@ export default function Experience() {
       </Paragraph>
       <Paragraph small>
         I received a positive review from my manager; however, I decided to
-        leave Meta because I didn't resonate with their remote culture and the
-        tasks assigned to me.
+        leave Meta because I didn't resonate with their remote culture.
       </Paragraph>
 
       <SectionSubtitle>
