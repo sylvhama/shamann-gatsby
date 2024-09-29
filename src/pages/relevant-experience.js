@@ -30,6 +30,18 @@ export default function Experience() {
       </VisuallyHidden>
 
       <SectionSubtitle>
+        Jan 2024 - Present <span aria-hidden="true">🛍️ 🪃</span>
+      </SectionSubtitle>
+      <Paragraph>
+        I returned to Shopify as a senior front-end developer. I contribute to
+        the New Customer Accounts platform as well as its{' '}
+        <Anchor href="https://shopify.dev/docs/api/customer-account-ui-extensions/unstable/components">
+          component library
+        </Anchor>
+        , while promoting best practices in accessibility.
+      </Paragraph>
+
+      <SectionSubtitle>
         Apr 2023 - Oct 2023 <span aria-hidden="true">🐇 ✈️</span>
       </SectionSubtitle>
       <Paragraph>
