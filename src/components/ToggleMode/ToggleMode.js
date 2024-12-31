@@ -37,7 +37,7 @@ export function ToggleMode() {
 
   return (
     <aside className={styles.Aside} aria-label="Change mode or language">
-      <Anchor href={frenchUrl}>Français</Anchor>
+      <Anchor href={frenchUrl} lang="fr">Français</Anchor>
       <Toggle
         aria-label={`Switch from ${isDark ? 'dark' : 'light'} mode to ${
           isDark ? 'light' : 'dark'
