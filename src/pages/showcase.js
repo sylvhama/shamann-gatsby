@@ -33,7 +33,7 @@ export default function Showcase() {
           <li>
             Acting as a Web Accessibility champion by addressing WCAG-related
             issues, training my peers in a11y best practices, and going through
-            a Fable audit, where testers expressed extreme satisfaction with the
+            an ADA audit, where testers expressed extreme satisfaction with the
             improvements;
           </li>
           <li>
