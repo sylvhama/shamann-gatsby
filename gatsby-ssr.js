@@ -40,7 +40,7 @@ const ThemeScript = () => {
     root.style.setProperty('--link-color-hover', colors[mode].linkHover);
     setTimeout(() => {
       document.body.style.transition = 'color 0.2s ease-out, background 0.2s ease-out';  
-    })
+    }, 100)
   })();
   `;
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
