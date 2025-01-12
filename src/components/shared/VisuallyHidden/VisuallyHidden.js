@@ -2,10 +2,14 @@ import React from 'react';
 
 import * as styles from './VisuallyHidden.module.css';
 
-export function VisuallyHidden({ children, ...props }) {
+export function VisuallyHidden({
+  children,
+  element: Element = 'div',
+  ...props
+}) {
   return (
-    <div className={styles.VisuallyHidden} {...props}>
+    <Element className={styles.VisuallyHidden} {...props}>
       {children}
-    </div>
+    </Element>
   );
 }

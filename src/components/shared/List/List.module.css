@@ -5,6 +5,10 @@
   text-align: left;
 }
 
+.List:has(+ h3) {
+  padding-bottom: 0.75rem;
+}
+
 .List.HideMarkers {
   list-style: none;
   padding: 0;

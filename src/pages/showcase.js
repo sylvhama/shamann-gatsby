@@ -21,38 +21,38 @@ export default function Showcase() {
         I contributed to many aspects of the Customer Accounts platform at
         Shopify, too numerous to list. However, what I am most proud of
         includes:
-        <List>
-          <li>
-            Contributing to a{' '}
-            <Anchor href="https://shopify.dev/docs/api/customer-account-ui-extensions/unstable/components">
-              component library
-            </Anchor>{' '}
-            enabling third-party developers to build extensions for Checkout and
-            Customer Accounts;
-          </li>
-          <li>
-            Acting as a Web Accessibility champion by addressing WCAG-related
-            issues, training my peers in a11y best practices, and going through
-            an ADA audit, where testers expressed extreme satisfaction with the
-            improvements;
-          </li>
-          <li>
-            Seeing my login page branding work featured in{' '}
-            <Anchor href="https://www.shopify.com/ca/editions/winter2025#branded-login-pages">
-              Shopify Editions
-            </Anchor>{' '}
-            and praised by partners on{' '}
-            <Anchor href="https://x.com/pmillegan/status/1848775306536235477">
-              X
-            </Anchor>{' '}
-            and{' '}
-            <Anchor href="https://www.linkedin.com/posts/talktohenryj_early-today-i-saw-nick-lenko-from-the-customer-activity-7254965834882682882-R53C">
-              LinkedIn
-            </Anchor>
-            .
-          </li>
-        </List>
       </Paragraph>
+      <List>
+        <li>
+          Contributing to a{' '}
+          <Anchor href="https://shopify.dev/docs/api/customer-account-ui-extensions/unstable/components">
+            component library
+          </Anchor>{' '}
+          enabling third-party developers to build extensions for Checkout and
+          Customer Accounts;
+        </li>
+        <li>
+          Acting as a Web Accessibility champion by addressing WCAG-related
+          issues, training my peers in a11y best practices, and going through an
+          ADA audit, where testers expressed extreme satisfaction with the
+          improvements;
+        </li>
+        <li>
+          Seeing my login page branding work featured in{' '}
+          <Anchor href="https://www.shopify.com/ca/editions/winter2025#branded-login-pages">
+            Shopify Editions
+          </Anchor>{' '}
+          and praised by partners on{' '}
+          <Anchor href="https://x.com/pmillegan/status/1848775306536235477">
+            X
+          </Anchor>{' '}
+          and{' '}
+          <Anchor href="https://www.linkedin.com/posts/talktohenryj_early-today-i-saw-nick-lenko-from-the-customer-activity-7254965834882682882-R53C">
+            LinkedIn
+          </Anchor>
+          .
+        </li>
+      </List>
 
       <SectionSubtitle>Ubisoft Club console app (2017-2019)</SectionSubtitle>
       <Paragraph>

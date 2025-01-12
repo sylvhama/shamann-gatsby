@@ -6,6 +6,10 @@
   text-align: justify;
 }
 
+.Paragraph:has(+ ul) {
+  padding-bottom: 0;
+}
+
 @media (max-width: 40rem) {
   .Paragraph {
     font-size: 1rem;
