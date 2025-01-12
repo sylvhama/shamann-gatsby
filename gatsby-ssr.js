@@ -38,6 +38,7 @@ const ThemeScript = () => {
     root.style.setProperty('--background-color', colors[mode].background);
     root.style.setProperty('--link-color', colors[mode].link);
     root.style.setProperty('--link-color-hover', colors[mode].linkHover);
+    root.style.setProperty('transition', 'color 0.2s ease-out, background 0.2s ease-out');
   })();
   `;
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
