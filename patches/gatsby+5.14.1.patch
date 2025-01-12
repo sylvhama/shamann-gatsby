@@ -1,8 +1,8 @@
 diff --git a/node_modules/gatsby/cache-dir/navigation.js b/node_modules/gatsby/cache-dir/navigation.js
-index 9bf8fbb..2fa2e73 100644
+index c0fa21d..cd86b6b 100644
 --- a/node_modules/gatsby/cache-dir/navigation.js
 +++ b/node_modules/gatsby/cache-dir/navigation.js
-@@ -182,7 +182,7 @@ class RouteAnnouncer extends React.Component {
+@@ -184,7 +184,7 @@ class RouteAnnouncer extends React.Component {
        if (document.title) {
          pageName = document.title
        }
@@ -11,4 +11,3 @@ index 9bf8fbb..2fa2e73 100644
        if (pageHeadings && pageHeadings.length) {
          pageName = pageHeadings[0].textContent
        }
-\ No newline at end of file
