@@ -46,7 +46,7 @@ export default function Showcase() {
               X
             </Anchor>{' '}
             and{' '}
-            <Anchor href="https://www.linkedin.com/posts/talktohenryj_early-today-i-saw-nick-lenko-from-the-customer-activity-7254965834882682882-R53C?utm_source=share&utm_medium=member_desktop">
+            <Anchor href="https://www.linkedin.com/posts/talktohenryj_early-today-i-saw-nick-lenko-from-the-customer-activity-7254965834882682882-R53C">
               LinkedIn
             </Anchor>
             .
@@ -100,7 +100,7 @@ export default function Showcase() {
         </Anchor>{' '}
         and <em>Service Worker</em> did not exist yet. But I still was able to
         develop an offline first web app via the <em>appCache API</em>. Here are{' '}
-        <Anchor href="https://sylvhama.notion.site/sylvhama/My-Portfolio-5e616652b45249b0ae69dda6b23d73e3?p=a3affc20c05847e4b99f007f4bce51df&pm=c">
+        <Anchor href="https://sylvhama.notion.site/sylvhama/My-Portfolio-5e616652b45249b0ae69dda6b23d73e3?p=a3affc20c05847e4b99f007f4bce51df">
           some pictures
         </Anchor>{' '}
         taken at one of the events.
