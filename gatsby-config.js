@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Sylvain Hamann',
     description: 'Senior Front-End Developer',
-    site: '@sylvhama',
+    site: 'https://shamann.dev',
     image: 'https://shamann.dev/shamann.png',
     navLinks: [
       { name: 'About Me', path: '/' },

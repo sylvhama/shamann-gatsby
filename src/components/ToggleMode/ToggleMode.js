@@ -1,7 +1,7 @@
 import React from 'react';
-import { useLocation } from '@reach/router';
 import Toggle from 'react-toggle';
 import { useMode } from 'hooks/useMode';
+import { useFrenchUrl } from 'hooks/useFrenchUrl';
 import { Anchor } from 'components/shared/Anchor';
 
 import * as styles from './ToggleMode.module.css';
@@ -37,7 +37,9 @@ export function ToggleMode() {
 
   return (
     <aside className={styles.Aside} aria-label="Change mode or language">
-      <Anchor href={frenchUrl} lang="fr">Français</Anchor>
+      <Anchor href={frenchUrl} lang="fr">
+        Français
+      </Anchor>
       <Toggle
         aria-label={`Switch from ${isDark ? 'dark' : 'light'} mode to ${
           isDark ? 'light' : 'dark'
@@ -51,28 +53,4 @@ export function ToggleMode() {
       />
     </aside>
   );
-}
-
-function useFrenchUrl() {
-  const location = useLocation();
-  const currentPathname = location.pathname;
-
-  const base = 'https://shamann.fr';
-  let pathname = '';
-
-  switch (currentPathname) {
-    case '/relevant-experience/':
-      pathname = '/parcours';
-      break;
-    case '/showcase/':
-      pathname = '/vitrine';
-      break;
-    case '/articles-talks/':
-      pathname = '/articles-presentations';
-      break;
-    default:
-      break;
-  }
-
-  return base + pathname;
 }

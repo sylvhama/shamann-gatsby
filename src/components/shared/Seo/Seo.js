@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { useLocation } from '@reach/router';
+import { useFrenchUrl } from 'hooks/useFrenchUrl';
 
 import { useSiteMetaData } from 'hooks/useSiteMetaData';
 
 export function Seo({ description, lang, meta, keywords, title }) {
+  const location = useLocation();
   const {
     title: defaultTitle,
     description: defaultDescription,
@@ -13,6 +16,8 @@ export function Seo({ description, lang, meta, keywords, title }) {
   } = useSiteMetaData();
   const siteTitle = `${title} | ${defaultTitle}`;
   const metaDescription = description || defaultDescription;
+  const currentUrl = site + location.pathname;
+  const frenchUrl = useFrenchUrl();
 
   return (
     <Helmet
@@ -21,10 +26,30 @@ export function Seo({ description, lang, meta, keywords, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${defaultTitle}`}
+      link={[
+        {
+          rel: 'canonical',
+          href: currentUrl,
+        },
+        {
+          rel: 'alternate',
+          hrefLang: 'en',
+          href: currentUrl,
+        },
+        {
+          rel: 'alternate',
+          hrefLang: 'fr',
+          href: frenchUrl,
+        },
+      ]}
       meta={[
         {
           name: 'description',
           content: metaDescription,
+        },
+        {
+          property: 'og:url',
+          content: currentUrl,
         },
         {
           property: 'og:title',
@@ -49,8 +74,8 @@ export function Seo({ description, lang, meta, keywords, title }) {
           content: 'summary',
         },
         {
-          name: 'twitter:site',
-          content: site,
+          name: 'twitter:url',
+          content: currentUrl,
         },
         {
           name: 'twitter:title',
