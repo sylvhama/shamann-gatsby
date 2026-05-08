@@ -3,7 +3,6 @@ module.exports = {
     title: 'Sylvain Hamann',
     description: 'Senior Front-End Developer',
     site: 'https://shamann.dev',
-    image: 'https://shamann.dev/shamann.png',
     navLinks: [
       { name: 'About Me', path: '/' },
       { name: 'Relevant Experience', path: '/relevant-experience/' },
@@ -12,7 +11,6 @@ module.exports = {
     ],
   },
   plugins: [
-    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
     {
@@ -24,7 +22,7 @@ module.exports = {
         background_color: '#212121',
         theme_color: '#212121',
         display: 'minimal-ui',
-        icon: 'src/images/shamann-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.svg',
       },
     },
     {

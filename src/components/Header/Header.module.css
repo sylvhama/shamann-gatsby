@@ -1,24 +1,4 @@
 .Header {
   padding-top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 40rem) {
-  .Header {
-    padding-top: 2rem;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-.Header img {
-  border-radius: 50%;
-}
-
-@media (max-width: 40rem) {
-  .Header img {
-    margin-bottom: 1rem;
-  }
+  text-align: center;
 }

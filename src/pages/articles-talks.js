@@ -1,5 +1,4 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 
 import { Section } from 'components/Section';
 import { Anchor } from 'components/shared/Anchor';
@@ -10,19 +9,7 @@ import { Paragraph } from 'components/shared/Paragraph';
 export default function Talks() {
   return (
     <Section title="Articles & Talks">
-      <div className="float-left">
-        <StaticImage
-          src="../images/shamann-speaker.jpg"
-          placeholder="blurred"
-          layout="fixed"
-          width={220}
-          height={220}
-          quality={100}
-          alt="Collage of several pictures taken at meetups"
-        />
-      </div>
       <Paragraph
-        className="reset"
         style={{
           textAlign: 'left',
         }}

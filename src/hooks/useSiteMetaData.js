@@ -8,7 +8,6 @@ export function useSiteMetaData() {
           title
           description
           site
-          image
           navLinks {
             name
             path

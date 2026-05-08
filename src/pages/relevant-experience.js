@@ -34,8 +34,8 @@ export default function Experience() {
       </SectionSubtitle>
       <Paragraph>
         I returned to Shopify as a senior front-end developer. I contribute to
-        the New Customer Accounts platform as well as its{' '}
-        <Anchor href="https://shopify.dev/docs/api/customer-account-ui-extensions/unstable/components">
+        the Customer Accounts & Sign-in platform as well as its{' '}
+        <Anchor href="https://shopify.dev/docs/api/customer-account-ui-extensions/latest/web-components">
           component library
         </Anchor>
         , while promoting best practices in accessibility.

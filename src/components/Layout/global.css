@@ -28,22 +28,3 @@ body {
     transition: outline-offset 150ms ease-out;
   }
 }
-
-.float-left {
-  margin-right: 1rem;
-  float: left;
-}
-@media (max-width: 40rem) {
-  .float-left {
-    margin: 0 auto 1rem;
-    display: flex;
-    justify-content: center;
-    float: none;
-  }
-}
-
-.reset::after {
-  content: '';
-  display: table;
-  clear: both;
-}

@@ -11,7 +11,6 @@ export function Seo({ description, lang, meta, keywords, title }) {
   const {
     title: defaultTitle,
     description: defaultDescription,
-    image,
     site,
   } = useSiteMetaData();
   const siteTitle = `${title} | ${defaultTitle}`;
@@ -64,12 +63,6 @@ export function Seo({ description, lang, meta, keywords, title }) {
           content: 'website',
         },
         {
-          property: 'og:image',
-          content: image,
-        },
-        { property: 'og:image:width', content: '500' },
-        { property: 'og:image:height', content: '500' },
-        {
           name: 'twitter:card',
           content: 'summary',
         },
@@ -84,10 +77,6 @@ export function Seo({ description, lang, meta, keywords, title }) {
         {
           name: 'twitter:description',
           content: metaDescription,
-        },
-        {
-          name: 'twitter:image',
-          content: image,
         },
       ]
         .concat(
